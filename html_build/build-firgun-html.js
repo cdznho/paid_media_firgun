@@ -8,7 +8,7 @@ const defaultInput = path.resolve(__dirname, "..", "deep-research-report.md");
 const defaultOutput = path.resolve(
   __dirname,
   "..",
-  "deep-research-report-firgun.html"
+  "index.html"
 );
 const inputPath = path.resolve(args[0] || defaultInput);
 const outputPath = path.resolve(args[1] || defaultOutput);

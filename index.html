@@ -1,0 +1,1438 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Paid media strategy for Firgun Ventures | Firgun formatted</title>
+    <meta
+      name="description"
+      content="Firgun positions itself as a quantum-first VC focused on Series A/B quantum scale-ups, with a stated ambition to be the “first call” for quantum entrepreneurs ready to scale and to bridge the Series A/B funding gap."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&family=Courier+Prime:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --firgun-green: #7e9f80;
+        --firgun-green-dark: #4b5f4c;
+        --firgun-green-mid: #647e66;
+        --grey-green: #c3cfc5;
+        --grey-green-dark: #747c76;
+        --grey-green-light: #dae2db;
+        --sand: #e1ddd4;
+        --sand-dark: #87847f;
+        --sand-light: #edeae4;
+        --paper: #ffffff;
+        --ink: #0c0c0c;
+        --muted: #5d625e;
+        --line: rgba(12, 12, 12, 0.12);
+        --line-strong: rgba(12, 12, 12, 0.22);
+        --shadow: 0 24px 70px rgba(12, 12, 12, 0.08);
+        --max-width: 1460px;
+        --content-width: 860px;
+        --radius: 26px;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        background:
+          linear-gradient(rgba(116, 124, 118, 0.08) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(116, 124, 118, 0.08) 1px, transparent 1px),
+          var(--sand-light);
+        background-size: 72px 72px, 72px 72px, auto;
+        color: var(--ink);
+        font-family: "Courier Prime", ui-monospace, SFMono-Regular, Menlo, monospace;
+        text-rendering: optimizeLegibility;
+      }
+
+      a {
+        color: inherit;
+        text-decoration-color: rgba(126, 159, 128, 0.85);
+        text-underline-offset: 0.18em;
+      }
+
+      img {
+        max-width: 100%;
+        display: block;
+      }
+
+      .progress {
+        position: fixed;
+        inset: 0 auto auto 0;
+        width: 100%;
+        height: 3px;
+        background: transparent;
+        z-index: 80;
+      }
+
+      .progress > span {
+        display: block;
+        width: 0;
+        height: 100%;
+        background: linear-gradient(90deg, var(--firgun-green-dark), var(--firgun-green));
+        transform-origin: left center;
+      }
+
+      .hero {
+        position: relative;
+        overflow: clip;
+        min-height: 96svh;
+        display: grid;
+        align-items: end;
+        padding: 2rem 2rem 3.25rem;
+      }
+
+      .hero::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background:
+          radial-gradient(circle at 78% 22%, rgba(126, 159, 128, 0.22), transparent 28%),
+          radial-gradient(circle at 88% 68%, rgba(195, 207, 197, 0.75), transparent 28%),
+          linear-gradient(135deg, rgba(225, 221, 212, 0.9), rgba(237, 234, 228, 0.96) 48%, rgba(195, 207, 197, 0.75) 100%);
+        z-index: 0;
+      }
+
+      .hero::after {
+        content: "";
+        position: absolute;
+        right: 3.5rem;
+        top: 1.75rem;
+        width: min(34vw, 420px);
+        aspect-ratio: 1 / 1.15;
+        border: 1px solid rgba(12, 12, 12, 0.12);
+        border-radius: 34px;
+        background:
+          radial-gradient(circle, rgba(75, 95, 76, 0.28) 0.9px, transparent 1px),
+          linear-gradient(180deg, rgba(255, 255, 255, 0.66), rgba(225, 221, 212, 0.22));
+        background-size: 11px 11px, auto;
+        box-shadow: var(--shadow);
+        opacity: 0.9;
+        z-index: 1;
+      }
+
+      .hero-shell {
+        position: relative;
+        z-index: 2;
+        width: min(100%, var(--max-width));
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: minmax(0, 1.1fr) minmax(300px, 0.72fr);
+        gap: 3.5rem;
+        align-items: end;
+      }
+
+      .hero-copy {
+        max-width: 740px;
+      }
+
+      .brand-lockup {
+        display: inline-flex;
+        flex-direction: column;
+        gap: 0.1rem;
+        margin-bottom: 1.8rem;
+      }
+
+      .brand-lockup strong {
+        font-family: "Roboto", system-ui, sans-serif;
+        font-size: 0.92rem;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+      }
+
+      .brand-lockup span {
+        color: var(--firgun-green-dark);
+        font-size: 0.9rem;
+      }
+
+      .hero-kicker {
+        margin: 0 0 0.85rem;
+        color: var(--firgun-green-dark);
+        font-size: 0.95rem;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4 {
+        margin: 0;
+        font-family: "Roboto", system-ui, sans-serif;
+        line-height: 0.98;
+        font-weight: 900;
+        letter-spacing: -0.04em;
+      }
+
+      h1 {
+        max-width: 11ch;
+        font-size: clamp(3.6rem, 8vw, 7rem);
+      }
+
+      .hero-summary {
+        max-width: 58ch;
+        margin: 1.5rem 0 0;
+        font-size: 1.08rem;
+        line-height: 1.7;
+        color: rgba(12, 12, 12, 0.82);
+      }
+
+      .hero-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.9rem 1rem;
+        margin-top: 1.9rem;
+      }
+
+      .hero-actions a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 48px;
+        padding: 0.75rem 1.25rem;
+        border-radius: 999px;
+        border: 1px solid rgba(12, 12, 12, 0.12);
+        text-decoration: none;
+        transition: transform 220ms ease, background-color 220ms ease, border-color 220ms ease;
+      }
+
+      .hero-actions a:first-child {
+        background: var(--ink);
+        color: var(--paper);
+        border-color: var(--ink);
+      }
+
+      .hero-actions a:last-child {
+        background: rgba(255, 255, 255, 0.58);
+        backdrop-filter: blur(16px);
+      }
+
+      .hero-actions a:hover {
+        transform: translateY(-2px);
+      }
+
+      .hero-metrics {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 1.1rem;
+        margin-top: 2.6rem;
+        padding-top: 1.2rem;
+        border-top: 1px solid var(--line-strong);
+      }
+
+      .hero-metric {
+        min-width: 0;
+      }
+
+      .hero-metric strong {
+        display: block;
+        font-family: "Roboto", system-ui, sans-serif;
+        font-size: clamp(1.35rem, 2vw, 1.9rem);
+        letter-spacing: -0.04em;
+      }
+
+      .hero-metric span {
+        display: block;
+        margin-top: 0.28rem;
+        font-size: 0.92rem;
+        line-height: 1.45;
+        color: var(--muted);
+      }
+
+      .hero-signal-plane {
+        position: relative;
+        min-height: 540px;
+        padding: 1.7rem;
+        border-radius: 32px;
+        border: 1px solid rgba(12, 12, 12, 0.12);
+        background:
+          linear-gradient(180deg, rgba(255, 255, 255, 0.52), rgba(255, 255, 255, 0.14)),
+          rgba(195, 207, 197, 0.5);
+        box-shadow: var(--shadow);
+      }
+
+      .hero-signal-plane::before {
+        content: "";
+        position: absolute;
+        inset: 1.1rem;
+        border-radius: 24px;
+        border: 1px solid rgba(12, 12, 12, 0.08);
+        pointer-events: none;
+      }
+
+      .hero-signal-plane::after {
+        content: "";
+        position: absolute;
+        inset: auto 2rem 2rem auto;
+        width: 44%;
+        aspect-ratio: 1 / 1;
+        border-radius: 50%;
+        background:
+          radial-gradient(circle, rgba(75, 95, 76, 0.22) 1px, transparent 1px);
+        background-size: 10px 10px;
+        opacity: 0.85;
+      }
+
+      .hero-signal-top {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        gap: 1rem;
+        margin-bottom: 2.2rem;
+      }
+
+      .hero-signal-top p {
+        margin: 0;
+      }
+
+      .signal-label {
+        color: var(--firgun-green-dark);
+        font-size: 0.9rem;
+      }
+
+      .signal-title {
+        font-family: "Roboto", system-ui, sans-serif;
+        font-size: 1.55rem;
+        letter-spacing: -0.05em;
+      }
+
+      .hero-signals {
+        display: grid;
+        gap: 1rem;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .hero-signals li {
+        position: relative;
+        padding: 0 0 0.95rem 1.25rem;
+        border-bottom: 1px solid rgba(12, 12, 12, 0.12);
+        font-size: 1rem;
+        line-height: 1.7;
+      }
+
+      .hero-signals li::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0.55rem;
+        width: 0.5rem;
+        height: 0.5rem;
+        border-radius: 50%;
+        background: var(--firgun-green-dark);
+      }
+
+      .hero-signals li:last-child {
+        border-bottom: none;
+      }
+
+      .page-shell {
+        width: min(100%, var(--max-width));
+        margin: 0 auto;
+        padding: 2rem;
+        display: grid;
+        grid-template-columns: minmax(210px, 250px) minmax(0, 1fr);
+        gap: 3rem;
+        align-items: start;
+      }
+
+      .toc {
+        position: sticky;
+        top: 1.35rem;
+        padding: 1.15rem 0 1.5rem 1rem;
+        border-left: 1px solid var(--line-strong);
+      }
+
+      .toc h2 {
+        font-size: 1rem;
+        letter-spacing: -0.02em;
+      }
+
+      .toc p {
+        margin: 0.35rem 0 1.2rem;
+        color: var(--muted);
+        font-size: 0.9rem;
+        line-height: 1.55;
+      }
+
+      .toc-list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: grid;
+        gap: 0.18rem;
+      }
+
+      .toc-item a {
+        display: grid;
+        grid-template-columns: 2rem 1fr;
+        gap: 0.65rem;
+        align-items: start;
+        padding: 0.5rem 0.7rem;
+        border-radius: 14px;
+        color: rgba(12, 12, 12, 0.74);
+        text-decoration: none;
+        transition: background-color 180ms ease, color 180ms ease, transform 180ms ease;
+      }
+
+      .toc-item a:hover,
+      .toc-item a.is-active {
+        background: rgba(255, 255, 255, 0.75);
+        color: var(--ink);
+        transform: translateX(2px);
+      }
+
+      .toc-level-3 a {
+        grid-template-columns: 1rem 1fr;
+        padding-left: 1.65rem;
+        color: rgba(12, 12, 12, 0.56);
+      }
+
+      .toc-number,
+      .toc-bullet {
+        color: var(--firgun-green-dark);
+      }
+
+      .report {
+        min-width: 0;
+      }
+
+      .chapter {
+        position: relative;
+        margin-bottom: 4.8rem;
+        padding-top: 0.3rem;
+        scroll-margin-top: 1rem;
+      }
+
+      .chapter::before {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 1px;
+        margin-bottom: 1.5rem;
+        background: linear-gradient(90deg, var(--firgun-green), rgba(126, 159, 128, 0));
+      }
+
+      .chapter-head {
+        display: grid;
+        grid-template-columns: 74px minmax(0, 1fr);
+        gap: 1rem;
+        align-items: start;
+        margin-bottom: 1.65rem;
+      }
+
+      .chapter-number {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 74px;
+        aspect-ratio: 1 / 1;
+        border-radius: 22px;
+        background: rgba(195, 207, 197, 0.5);
+        border: 1px solid rgba(12, 12, 12, 0.08);
+        font-family: "Roboto", system-ui, sans-serif;
+        font-size: 1.2rem;
+        font-weight: 900;
+        letter-spacing: -0.04em;
+      }
+
+      .chapter-kicker,
+      .subsection-kicker {
+        margin: 0 0 0.45rem;
+        color: var(--firgun-green-dark);
+        font-size: 0.9rem;
+      }
+
+      .chapter h2 {
+        max-width: 18ch;
+        font-size: clamp(2.1rem, 4vw, 3.2rem);
+      }
+
+      .chapter-body > * {
+        max-width: var(--content-width);
+      }
+
+      .chapter-body p,
+      .chapter-body li {
+        font-size: 1.02rem;
+        line-height: 1.78;
+      }
+
+      .chapter-body p {
+        margin: 0 0 1.15rem;
+      }
+
+      .chapter-body strong {
+        font-family: "Roboto", system-ui, sans-serif;
+        font-weight: 700;
+      }
+
+      .chapter-body em {
+        color: var(--firgun-green-dark);
+      }
+
+      .report-list {
+        margin: 0 0 1.8rem;
+        padding: 0;
+        list-style: none;
+        display: grid;
+        gap: 0.75rem;
+      }
+
+      .report-list li {
+        position: relative;
+        padding-left: 1.4rem;
+      }
+
+      .report-list li::before {
+        content: "";
+        position: absolute;
+        left: 0.1rem;
+        top: 0.72rem;
+        width: 0.55rem;
+        height: 0.55rem;
+        border-radius: 50%;
+        background: var(--firgun-green-dark);
+      }
+
+      ol.report-list {
+        counter-reset: report-count;
+      }
+
+      ol.report-list li::before {
+        counter-increment: report-count;
+        content: counter(report-count, decimal-leading-zero);
+        width: auto;
+        height: auto;
+        top: 0.08rem;
+        border-radius: 0;
+        background: none;
+        font-family: "Roboto", system-ui, sans-serif;
+        font-size: 0.88rem;
+        font-weight: 700;
+        color: var(--firgun-green-dark);
+      }
+
+      .subsection {
+        margin: 2.2rem 0 2.4rem;
+        padding: 1.3rem 0 0;
+        border-top: 1px solid var(--line);
+        scroll-margin-top: 1rem;
+      }
+
+      .subsection h3 {
+        margin-bottom: 1rem;
+        font-size: clamp(1.45rem, 2.4vw, 2.15rem);
+        line-height: 1.08;
+      }
+
+      .table-wrap {
+        width: min(100%, calc(var(--content-width) + 130px));
+        margin: 1.7rem 0 2.25rem;
+        overflow-x: auto;
+        border-radius: 28px;
+        background: rgba(255, 255, 255, 0.82);
+        border: 1px solid rgba(12, 12, 12, 0.08);
+        box-shadow: var(--shadow);
+      }
+
+      table {
+        width: 100%;
+        min-width: 720px;
+        border-collapse: collapse;
+      }
+
+      thead th {
+        position: sticky;
+        top: 0;
+        background: var(--grey-green);
+        font-family: "Roboto", system-ui, sans-serif;
+        font-size: 0.9rem;
+        line-height: 1.25;
+        text-align: left;
+      }
+
+      th,
+      td {
+        padding: 1rem 1rem 0.95rem;
+        border-bottom: 1px solid rgba(12, 12, 12, 0.08);
+        vertical-align: top;
+      }
+
+      tbody tr:nth-child(even) td {
+        background: rgba(225, 221, 212, 0.28);
+      }
+
+      tbody tr:last-child td {
+        border-bottom: none;
+      }
+
+      .code-block,
+      .timeline-block {
+        width: min(100%, calc(var(--content-width) + 40px));
+        margin: 1.8rem 0 2.4rem;
+        border-radius: 28px;
+        overflow: hidden;
+        border: 1px solid rgba(12, 12, 12, 0.1);
+        box-shadow: var(--shadow);
+      }
+
+      .code-block {
+        background: var(--ink);
+        color: var(--paper);
+      }
+
+      .code-label {
+        padding: 0.8rem 1rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+        color: rgba(255, 255, 255, 0.76);
+        font-size: 0.88rem;
+      }
+
+      pre {
+        margin: 0;
+        padding: 1.25rem 1.35rem 1.45rem;
+        overflow-x: auto;
+        font-size: 0.95rem;
+        line-height: 1.65;
+      }
+
+      code {
+        padding: 0.12rem 0.35rem;
+        border-radius: 8px;
+        background: rgba(12, 12, 12, 0.08);
+        font-size: 0.92em;
+      }
+
+      .code-block code {
+        background: none;
+        padding: 0;
+      }
+
+      .timeline-block {
+        background: rgba(255, 255, 255, 0.88);
+      }
+
+      .timeline-meta {
+        padding: 1.1rem 1.2rem 0.6rem;
+        border-bottom: 1px solid rgba(12, 12, 12, 0.08);
+      }
+
+      .timeline-label,
+      .timeline-copy {
+        margin: 0;
+      }
+
+      .timeline-label {
+        color: var(--firgun-green-dark);
+        font-size: 0.88rem;
+      }
+
+      .timeline-copy {
+        margin-top: 0.35rem;
+        color: var(--muted);
+        font-size: 0.95rem;
+        line-height: 1.55;
+      }
+
+      .timeline-groups {
+        display: grid;
+        gap: 0;
+      }
+
+      .timeline-group {
+        padding: 1.1rem 1.2rem 1.2rem;
+        border-bottom: 1px solid rgba(12, 12, 12, 0.08);
+      }
+
+      .timeline-group:last-child {
+        border-bottom: none;
+      }
+
+      .timeline-group h4 {
+        margin-bottom: 0.85rem;
+        font-size: 1.2rem;
+      }
+
+      .timeline-row {
+        display: grid;
+        grid-template-columns: minmax(0, 1.45fr) minmax(132px, 0.45fr) minmax(132px, 0.35fr);
+        gap: 0.9rem;
+        padding: 0.68rem 0;
+        border-top: 1px solid rgba(12, 12, 12, 0.06);
+      }
+
+      .timeline-row:first-of-type {
+        border-top: none;
+      }
+
+      .timeline-task {
+        font-size: 0.98rem;
+        line-height: 1.6;
+      }
+
+      .timeline-date,
+      .timeline-duration {
+        color: var(--muted);
+        font-size: 0.9rem;
+      }
+
+      .footer-note {
+        max-width: var(--content-width);
+        margin-top: 2rem;
+        padding-top: 1.2rem;
+        border-top: 1px solid var(--line);
+        color: var(--muted);
+        font-size: 0.92rem;
+        line-height: 1.6;
+      }
+
+      .reveal {
+        opacity: 0;
+        transform: translateY(26px);
+        transition: opacity 720ms ease, transform 720ms ease;
+      }
+
+      .reveal.is-visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      @media (max-width: 1080px) {
+        .hero-shell,
+        .page-shell {
+          grid-template-columns: 1fr;
+        }
+
+        .hero {
+          min-height: auto;
+          padding-top: 1.5rem;
+        }
+
+        .hero::after {
+          width: min(56vw, 320px);
+          right: 2rem;
+          top: 6rem;
+        }
+
+        .hero-signal-plane {
+          min-height: 420px;
+        }
+
+        .toc {
+          position: relative;
+          top: auto;
+          padding: 0 0 1.2rem;
+          border-left: none;
+          border-bottom: 1px solid var(--line-strong);
+        }
+
+        .toc-list {
+          grid-auto-flow: column;
+          grid-auto-columns: minmax(200px, 1fr);
+          overflow-x: auto;
+          padding-bottom: 0.25rem;
+        }
+      }
+
+      @media (max-width: 740px) {
+        body {
+          background-size: 52px 52px, 52px 52px, auto;
+        }
+
+        .hero,
+        .page-shell {
+          padding-left: 1rem;
+          padding-right: 1rem;
+        }
+
+        .hero-metrics {
+          grid-template-columns: 1fr;
+        }
+
+        .hero-signal-plane {
+          min-height: auto;
+        }
+
+        .chapter-head {
+          grid-template-columns: 1fr;
+        }
+
+        .chapter-number {
+          width: 56px;
+          border-radius: 18px;
+        }
+
+        table {
+          min-width: 620px;
+        }
+
+        .timeline-row {
+          grid-template-columns: 1fr;
+          gap: 0.25rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="progress" aria-hidden="true"><span id="progress-bar"></span></div>
+
+    <header class="hero">
+      <div class="hero-shell">
+        <div class="hero-copy reveal is-visible">
+          <div class="brand-lockup">
+            <strong>FIRGUN</strong>
+            <span>ventures</span>
+          </div>
+          <p class="hero-kicker">Paid media strategy formatted in Firgun’s visual language</p>
+          <h1>Paid media strategy for Firgun Ventures</h1>
+          <p class="hero-summary">Firgun positions itself as a quantum-first VC focused on Series A/B quantum scale-ups, with a stated ambition to be the “first call” for quantum entrepreneurs ready to scale and to bridge the Series A/B funding gap.</p>
+          <div class="hero-actions">
+            <a href="#report-start">Read the report</a>
+            <a href="#measurement-tracking-attribution-and-reporting-cadence">Jump to measurement</a>
+          </div>
+          <div class="hero-metrics">
+            
+                  <div class="hero-metric">
+                    <strong>6,502</strong>
+                    <span>quantum-engaged organisations</span>
+                  </div>
+                
+                  <div class="hero-metric">
+                    <strong>£10k–£25k/month</strong>
+                    <span>early monthly test budget</span>
+                  </div>
+                
+          </div>
+        </div>
+
+        <aside class="hero-signal-plane reveal is-visible" aria-label="Strategic posture">
+          <div class="hero-signal-top">
+            <p class="signal-label">Strategic posture</p>
+            <p class="signal-title">Precision over volume</p>
+          </div>
+          <ul class="hero-signals">
+            <li>Series A/B quantum scale-up focus</li><li>Compliance-first LP motion</li><li>Credibility, content, and ecosystem amplification</li><li>Designed for qualified conversations, not lead volume</li>
+          </ul>
+        </aside>
+      </div>
+    </header>
+
+    <div class="page-shell" id="report-start">
+      <aside class="toc">
+        <h2>Contents</h2>
+        <p>Sticky navigation for the long-form report structure.</p>
+        <ul class="toc-list">
+        <li class="toc-item toc-level-2">
+          <a href="#executive-summary" data-target="executive-summary">
+            <span class="toc-number">01</span>
+            <span class="toc-label">Executive summary</span>
+          </a>
+        </li>
+      
+        <li class="toc-item toc-level-3">
+          <a href="#recommended-primary-objectives-and-priority-order" data-target="recommended-primary-objectives-and-priority-order">
+            <span class="toc-bullet">·</span>
+            <span class="toc-label">Recommended primary objectives and priority order</span>
+          </a>
+        </li>
+      
+        <li class="toc-item toc-level-3">
+          <a href="#budget-scenarios-unspecified-budget-recommended-ranges" data-target="budget-scenarios-unspecified-budget-recommended-ranges">
+            <span class="toc-bullet">·</span>
+            <span class="toc-label">Budget scenarios (unspecified budget → recommended ranges)</span>
+          </a>
+        </li>
+      
+        <li class="toc-item toc-level-2">
+          <a href="#objectives-and-funnel-architecture" data-target="objectives-and-funnel-architecture">
+            <span class="toc-number">02</span>
+            <span class="toc-label">Objectives and funnel architecture</span>
+          </a>
+        </li>
+      
+        <li class="toc-item toc-level-3">
+          <a href="#recommended-paid-funnel-model" data-target="recommended-paid-funnel-model">
+            <span class="toc-bullet">·</span>
+            <span class="toc-label">Recommended paid funnel model</span>
+          </a>
+        </li>
+      
+        <li class="toc-item toc-level-3">
+          <a href="#landing-pages-to-add-highest-leverage-before-scaling" data-target="landing-pages-to-add-highest-leverage-before-scaling">
+            <span class="toc-bullet">·</span>
+            <span class="toc-label">Landing pages to add (highest leverage before scaling)</span>
+          </a>
+        </li>
+      
+        <li class="toc-item toc-level-2">
+          <a href="#audience-segmentation-and-personas" data-target="audience-segmentation-and-personas">
+            <span class="toc-number">03</span>
+            <span class="toc-label">Audience segmentation and personas</span>
+          </a>
+        </li>
+      
+        <li class="toc-item toc-level-3">
+          <a href="#personas-estimated-sizes-intent-signals-and-channels" data-target="personas-estimated-sizes-intent-signals-and-channels">
+            <span class="toc-bullet">·</span>
+            <span class="toc-label">Personas, estimated sizes, intent signals, and channels</span>
+          </a>
+        </li>
+      
+        <li class="toc-item toc-level-2">
+          <a href="#competitive-landscape" data-target="competitive-landscape">
+            <span class="toc-number">04</span>
+            <span class="toc-label">Competitive landscape</span>
+          </a>
+        </li>
+      
+        <li class="toc-item toc-level-3">
+          <a href="#corrected-competitive-landscape-table-clean-organisation-names-no-entity-wrappers" data-target="corrected-competitive-landscape-table-clean-organisation-names-no-entity-wrappers">
+            <span class="toc-bullet">·</span>
+            <span class="toc-label">Corrected competitive landscape table (clean organisation names, no entity wrappers)</span>
+          </a>
+        </li>
+      
+        <li class="toc-item toc-level-2">
+          <a href="#channel-strategy-budgets-kpis-and-expected-cpl-ranges" data-target="channel-strategy-budgets-kpis-and-expected-cpl-ranges">
+            <span class="toc-number">05</span>
+            <span class="toc-label">Channel strategy, budgets, KPIs, and expected CPL ranges</span>
+          </a>
+        </li>
+      
+        <li class="toc-item toc-level-3">
+          <a href="#channel-allocation-by-phase-recommended" data-target="channel-allocation-by-phase-recommended">
+            <span class="toc-bullet">·</span>
+            <span class="toc-label">Channel allocation by phase (recommended)</span>
+          </a>
+        </li>
+      
+        <li class="toc-item toc-level-3">
+          <a href="#cost-and-performance-assumptions-used-for-cpl-cpa-ranges" data-target="cost-and-performance-assumptions-used-for-cpl-cpa-ranges">
+            <span class="toc-bullet">·</span>
+            <span class="toc-label">Cost and performance assumptions used for CPL/CPA ranges</span>
+          </a>
+        </li>
+      
+        <li class="toc-item toc-level-3">
+          <a href="#channel-by-channel-operating-plan" data-target="channel-by-channel-operating-plan">
+            <span class="toc-bullet">·</span>
+            <span class="toc-label">Channel-by-channel operating plan</span>
+          </a>
+        </li>
+      
+        <li class="toc-item toc-level-2">
+          <a href="#measurement-tracking-attribution-and-reporting-cadence" data-target="measurement-tracking-attribution-and-reporting-cadence">
+            <span class="toc-number">06</span>
+            <span class="toc-label">Measurement, tracking, attribution, and reporting cadence</span>
+          </a>
+        </li>
+      
+        <li class="toc-item toc-level-3">
+          <a href="#conversion-events-to-implement-minimum-viable-set" data-target="conversion-events-to-implement-minimum-viable-set">
+            <span class="toc-bullet">·</span>
+            <span class="toc-label">Conversion events to implement (minimum viable set)</span>
+          </a>
+        </li>
+      
+        <li class="toc-item toc-level-3">
+          <a href="#ga4-tagging-principles" data-target="ga4-tagging-principles">
+            <span class="toc-bullet">·</span>
+            <span class="toc-label">GA4 + tagging principles</span>
+          </a>
+        </li>
+      
+        <li class="toc-item toc-level-3">
+          <a href="#consent-cookies-and-measurement-reliability-uk-eu-reality" data-target="consent-cookies-and-measurement-reliability-uk-eu-reality">
+            <span class="toc-bullet">·</span>
+            <span class="toc-label">Consent, cookies, and measurement reliability (UK/EU reality)</span>
+          </a>
+        </li>
+      
+        <li class="toc-item toc-level-3">
+          <a href="#pixel-setup-platform-essentials" data-target="pixel-setup-platform-essentials">
+            <span class="toc-bullet">·</span>
+            <span class="toc-label">Pixel setup (platform essentials)</span>
+          </a>
+        </li>
+      
+        <li class="toc-item toc-level-3">
+          <a href="#utm-taxonomy-standardise-from-day-one" data-target="utm-taxonomy-standardise-from-day-one">
+            <span class="toc-bullet">·</span>
+            <span class="toc-label">UTM taxonomy (standardise from day one)</span>
+          </a>
+        </li>
+      
+        <li class="toc-item toc-level-3">
+          <a href="#reporting-cadence" data-target="reporting-cadence">
+            <span class="toc-bullet">·</span>
+            <span class="toc-label">Reporting cadence</span>
+          </a>
+        </li>
+      
+        <li class="toc-item toc-level-2">
+          <a href="#creative-and-messaging-frameworks" data-target="creative-and-messaging-frameworks">
+            <span class="toc-number">07</span>
+            <span class="toc-label">Creative and messaging frameworks</span>
+          </a>
+        </li>
+      
+        <li class="toc-item toc-level-3">
+          <a href="#messaging-pillars-reusable-across-channels" data-target="messaging-pillars-reusable-across-channels">
+            <span class="toc-bullet">·</span>
+            <span class="toc-label">Messaging pillars (reusable across channels)</span>
+          </a>
+        </li>
+      
+        <li class="toc-item toc-level-3">
+          <a href="#founder-creative-framework" data-target="founder-creative-framework">
+            <span class="toc-bullet">·</span>
+            <span class="toc-label">Founder creative framework</span>
+          </a>
+        </li>
+      
+        <li class="toc-item toc-level-3">
+          <a href="#lp-creative-framework-compliance-first" data-target="lp-creative-framework-compliance-first">
+            <span class="toc-bullet">·</span>
+            <span class="toc-label">LP creative framework (compliance-first)</span>
+          </a>
+        </li>
+      
+        <li class="toc-item toc-level-3">
+          <a href="#talent-creative-framework" data-target="talent-creative-framework">
+            <span class="toc-bullet">·</span>
+            <span class="toc-label">Talent creative framework</span>
+          </a>
+        </li>
+      
+        <li class="toc-item toc-level-3">
+          <a href="#ecosystem-partner-creative-framework" data-target="ecosystem-partner-creative-framework">
+            <span class="toc-bullet">·</span>
+            <span class="toc-label">Ecosystem partner creative framework</span>
+          </a>
+        </li>
+      
+        <li class="toc-item toc-level-2">
+          <a href="#ninety-day-launch-plan-and-governance" data-target="ninety-day-launch-plan-and-governance">
+            <span class="toc-number">08</span>
+            <span class="toc-label">Ninety-day launch plan and governance</span>
+          </a>
+        </li>
+      
+        <li class="toc-item toc-level-3">
+          <a href="#timeline-and-milestones" data-target="timeline-and-milestones">
+            <span class="toc-bullet">·</span>
+            <span class="toc-label">Timeline and milestones</span>
+          </a>
+        </li>
+      
+        <li class="toc-item toc-level-3">
+          <a href="#suggested-a-b-tests-and-success-criteria" data-target="suggested-a-b-tests-and-success-criteria">
+            <span class="toc-bullet">·</span>
+            <span class="toc-label">Suggested A/B tests and success criteria</span>
+          </a>
+        </li>
+      
+        <li class="toc-item toc-level-3">
+          <a href="#optimisation-rules-practical-guardrails" data-target="optimisation-rules-practical-guardrails">
+            <span class="toc-bullet">·</span>
+            <span class="toc-label">Optimisation rules (practical guardrails)</span>
+          </a>
+        </li>
+      
+        <li class="toc-item toc-level-3">
+          <a href="#risks-constraints-and-compliance-considerations" data-target="risks-constraints-and-compliance-considerations">
+            <span class="toc-bullet">·</span>
+            <span class="toc-label">Risks, constraints, and compliance considerations</span>
+          </a>
+        </li>
+      
+        <li class="toc-item toc-level-3">
+          <a href="#day-ninety-success-definition-what-good-looks-like" data-target="day-ninety-success-definition-what-good-looks-like">
+            <span class="toc-bullet">·</span>
+            <span class="toc-label">Day‑ninety success definition (what “good” looks like)</span>
+          </a>
+        </li>
+      </ul>
+      </aside>
+
+      <main class="report">
+        
+          <section class="chapter reveal" id="executive-summary">
+            <header class="chapter-head">
+              <div class="chapter-number">01</div>
+              <div class="chapter-title-wrap">
+                <p class="chapter-kicker">Report section</p>
+                <h2>Executive summary</h2>
+              </div>
+            </header>
+            <div class="chapter-body">
+        <p>Firgun positions itself as a <strong>quantum-first VC focused on Series A/B quantum scale-ups</strong>, with a stated ambition to be the “first call” for quantum entrepreneurs ready to scale and to <strong>bridge the Series A/B funding gap</strong>.  The website already contains the core conversion and trust assets a paid programme needs (contact form with lead-type routing, newsletter subscription, podcast hub, “News” updates, and an investor portal referenced in legal terms).</p><p>At the same time, Firgun’s legal disclaimer is explicit that site content is <strong>for professional/institutional/sophisticated investors</strong> and is <strong>not an offer or solicitation</strong>, with fund materials provided separately only to people meeting regulatory/qualification requirements.  This makes <strong>LP-facing paid media</strong> feasible only as a <strong>compliance-first, gated, ABM-led</strong> motion (brand/insights distribution → relationship conversion), not a mass acquisition channel.</p><p>Paid media should therefore be designed for a <strong>small, high-value market</strong>, where the goal is to win <em>qualified conversations</em> (founders, partners, eligible allocators) rather than high lead volume. Industry sizing supports this “precision” approach: QED‑C’s 2025 snapshot (data current as of end‑2024) reports <strong>6,502 quantum-engaged organisations</strong>, <strong>513 pure-play quantum companies</strong>, and strong regional concentration (e.g., Europe &amp; Central Asia and North America).</p>
+          <div class="subsection reveal" id="recommended-primary-objectives-and-priority-order">
+            <p class="subsection-kicker">Focus area</p>
+            <h3>Recommended primary objectives and priority order</h3>
+        <p><strong>Priority order (recommended for the first 12 months; first 90 days heavily focused on the top three):</strong></p><div class="table-wrap "><table><thead><tr><th>Objective</th><th>Priority order</th><th>Why this comes first for Firgun</th><th>What paid must do</th></tr></thead><tbody><tr><td>Brand awareness &amp; credibility</td><td>1</td><td>Trust is the gating factor in deep tech VC selection; Firgun is positioning as the Series A/B quantum specialist.</td><td>Establish authority via YouTube/LinkedIn thought leadership, conference amplification, PR retargeting</td></tr><tr><td>Dealflow (Series A/B)</td><td>2</td><td>Stated focus is Series A/B quantum scale-ups and bridging the funding gap at A/B.</td><td>Capture high intent (Search) + retarget engaged visitors into founder enquiries</td></tr><tr><td>Community building (podcast/newsletter/events)</td><td>3</td><td>Firgun already runs a podcast and newsletter; paid can scale distribution sustainably.</td><td>Build owned audiences and retargeting pools; convert engagement into enquiries</td></tr><tr><td>Ecosystem partnerships</td><td>4</td><td>Events/speaking + ecosystem convening drive proprietary dealflow and brand lift.</td><td>Target partners (corporates, institutes, ecosystem builders) with position-led offers</td></tr><tr><td>Talent hiring</td><td>5</td><td>Careers page exists but is “coming soon” (unspecified open roles).</td><td>Always‑on employer brand + “warm” retargeting; switch to hiring campaigns when roles exist</td></tr><tr><td>LP acquisition</td><td>6</td><td>Highly constrained by financial promotions, eligibility, and Firgun’s own disclaimer posture.</td><td>ABM + gated investor materials + event-led relationship conversion</td></tr></tbody></table></div></div>
+          <div class="subsection reveal" id="budget-scenarios-unspecified-budget-recommended-ranges">
+            <p class="subsection-kicker">Focus area</p>
+            <h3>Budget scenarios (unspecified budget → recommended ranges)</h3>
+        <p>These are <em>monthly media-only</em> ranges (excluding creative production and landing page work; both are currently unspecified).</p><ul class="report-list"><li><strong>Early (test &amp; instrument, months 1–3): £10k–£25k/month</strong></li><li><strong>Growth (scale proven plays, months 4–9): £25k–£60k/month</strong></li><li><strong>Scale (always-on + ABM + sponsorships, months 10–12+): £60k–£150k/month</strong></li></ul></div></div></section>
+          <section class="chapter reveal" id="objectives-and-funnel-architecture">
+            <header class="chapter-head">
+              <div class="chapter-number">02</div>
+              <div class="chapter-title-wrap">
+                <p class="chapter-kicker">Report section</p>
+                <h2>Objectives and funnel architecture</h2>
+              </div>
+            </header>
+            <div class="chapter-body">
+        <p>Firgun’s site already supports a workable conversion flow: the contact form routes enquiries by <strong>Type</strong> (Startup / LP / VC / Other).  The homepage and FAQ establish the A/B thesis and sector scope (computing, communications/cryptography, sensing/imaging).</p>
+          <div class="subsection reveal" id="recommended-paid-funnel-model">
+            <p class="subsection-kicker">Focus area</p>
+            <h3>Recommended paid funnel model</h3>
+        <p><strong>Upper funnel (credibility + reach)</strong> Promote “who Firgun is” and “what Firgun backs” with proof signals and viewpoints: Series A/B quantum focus, “hands-on partner,” portfolio messaging, council/team credibility, and active participation in industry events.</p><p><strong>Mid funnel (education + intent building)</strong> Route paid traffic into <strong>audience-specific landing paths</strong> rather than the generic homepage (details below). Use content that converts <em>attention into retargetable audiences</em>: short playbooks, checklists, event recaps, and podcast clips.</p><p><strong>Lower funnel (conversion + qualification)</strong> Optimise to “qualified conversation” outcomes, using Firgun’s contact form lead-type routing and (recommended) calendar booking for founders/partners.  For LPs, ensure gated access aligns with Firgun’s disclaimer on eligibility and “not an offer/solicitation”.</p></div>
+          <div class="subsection reveal" id="landing-pages-to-add-highest-leverage-before-scaling">
+            <p class="subsection-kicker">Focus area</p>
+            <h3>Landing pages to add (highest leverage before scaling)</h3>
+        <p>These are currently <strong>unspecified on the site</strong> (i.e., not evidenced as existing dedicated pages), but strongly recommended for paid efficiency and measurement clarity.</p><ul class="report-list"><li><strong>/founders</strong>: Series A/B fit, what Firgun helps with, process, proof</li><li><strong>/insights</strong>: podcast + newsletter archive + “download” assets</li><li><strong>/events</strong>: calendar + registration + recap pages (retargeting anchors)</li><li><strong>/investors</strong>: gated, eligibility acknowledgement, links to investor portal (investor portal is referenced in legal terms)</li><li><strong>/careers</strong>: currently “coming soon”; publish roles before running hiring acquisition</li></ul></div></div></section>
+          <section class="chapter reveal" id="audience-segmentation-and-personas">
+            <header class="chapter-head">
+              <div class="chapter-number">03</div>
+              <div class="chapter-title-wrap">
+                <p class="chapter-kicker">Report section</p>
+                <h2>Audience segmentation and personas</h2>
+              </div>
+            </header>
+            <div class="chapter-body">
+        <p>QED‑C’s 2025 industry snapshot gives an empirical base for planning audience size: <strong>513 pure-play quantum companies</strong> and <strong>6,502 quantum-engaged organisations</strong>, with <strong>5,989 partial-play</strong> organisations and meaningful regional concentration.  Use this to justify <strong>ABM + hubs strategy</strong> (rather than broad consumer-style reach).</p>
+          <div class="subsection reveal" id="personas-estimated-sizes-intent-signals-and-channels">
+            <p class="subsection-kicker">Focus area</p>
+            <h3>Personas, estimated sizes, intent signals, and channels</h3>
+        <p>Figures below are planning ranges; exact platform audience sizes are <strong>unspecified</strong> until you build live audiences and validate match rates (also affected by consent).</p><div class="table-wrap "><table><thead><tr><th>Segment</th><th>Persona (decision-maker)</th><th>Estimated audience size (planning view)</th><th>High-intent signals (targeting/retargeting)</th><th>Best channels to reach</th></tr></thead><tbody><tr><td>Founders (primary)</td><td>Quantum Series A/B CEO/CTO scaling to revenue pathways</td><td>TAM anchored by ~513 pure‑play companies; “A/B‑ready” subset is a minority at any time (assumption; validate via ABM lists).</td><td>Search queries for Series A/B funding; repeat visits to portfolio/team/FAQ; engagement with podcast/event recaps.</td><td>Google Search, LinkedIn, YouTube, programmatic ABM, retargeting</td></tr><tr><td>Founders (secondary)</td><td>Seed founder (pipeline building for future A/B)</td><td>Wider pool in the ~513 universe; focus on top hubs (regional distribution in QED‑C).</td><td>Engagement with “what we look for”; newsletter signups; podcast completion; event registrations.</td><td>LinkedIn, YouTube, Reddit (carefully), low-cost retargeting</td></tr><tr><td>LPs (controlled)</td><td>Institutional allocator (VC/PE alternatives)</td><td>TAM is large but reachable SOM should be <strong>named account lists</strong> (ABM); investor eligibility gating required.</td><td>Visits to gated investor pages; engagement with investment thesis content; conference-based engagement.</td><td>LinkedIn ABM, programmatic ABM, selective podcasts/events; limited Search</td></tr><tr><td>LPs (secondary)</td><td>Single family office CIO/Principal</td><td>~8,030 single family offices globally (2024 estimate).</td><td>“Quantum investing” / “deep tech fund” intent; thought leadership engagement; referrals</td><td>LinkedIn ABM, programmatic ABM, podcasts/events; retargeting</td></tr><tr><td>Talent</td><td>VC associate / platform / operator with quantum adjacency</td><td>Pure‑play quantum workforce estimated at ~14,517 globally (2024), with ~7,300+ job &amp; internship openings (2023/2024 range).</td><td>Careers page visits; team/about dwell time; job intent searches; LinkedIn profile skills signals</td><td>LinkedIn (primary), Search (brand + role), retargeting</td></tr><tr><td>Ecosystem partners</td><td>Corporate innovation / institutes / ecosystem builders</td><td>Partial‑play organisations ~5,989, plus universities and other entities in QED‑C ecosystem structure.</td><td>Event attendance; partnership enquiries; content downloads; podcast shares</td><td>LinkedIn, YouTube, events, programmatic niche placements</td></tr></tbody></table></div></div></div></section>
+          <section class="chapter reveal" id="competitive-landscape">
+            <header class="chapter-head">
+              <div class="chapter-number">04</div>
+              <div class="chapter-title-wrap">
+                <p class="chapter-kicker">Report section</p>
+                <h2>Competitive landscape</h2>
+              </div>
+            </header>
+            <div class="chapter-body">
+        <p>Firgun competes for attention with (a) quantum-specialist funds and (b) deep-tech funds that have a clear quantum/next‑gen compute thesis. Firgun’s stated differentiation is <strong>Series A/B quantum scale-up focus</strong>, in contrast to many quantum investors skewing earlier stage.</p>
+          <div class="subsection reveal" id="corrected-competitive-landscape-table-clean-organisation-names-no-entity-wrappers">
+            <p class="subsection-kicker">Focus area</p>
+            <h3>Corrected competitive landscape table (clean organisation names, no entity wrappers)</h3>
+        <div class="table-wrap "><table><thead><tr><th>Comparable VC</th><th>Positioning (from public messaging)</th><th>Likely paid media posture</th><th>Creative examples that tend to work for this class of VC</th></tr></thead><tbody><tr><td>Quantonation</td><td>Global early-stage fund investing in quantum / deep physics.</td><td>Mostly organic thought leadership + selective paid boosts around fund closes, reports, events</td><td>“New fund / portfolio news”, “download thesis/report”, event invitations</td></tr><tr><td>55 North</td><td>100% focused on the quantum stack; positions as a dedicated quantum fund.</td><td>Likely LinkedIn reach + event sponsorships; selective search on brand</td><td>“Europe leads quantum commercialisation”, “fund announcements”, “portfolio wins”</td></tr><tr><td>QAI Ventures</td><td>Global VC + ecosystem builder across quantum / QuantumAI / advanced computing.</td><td>Likely runs paid to accelerators/events and ecosystem programmes; ABM for corporates</td><td>“Apply to accelerator”, “industry cluster programme”, “ecosystem membership”</td></tr><tr><td>QDNL Participations</td><td>Bridge from grant phase to venture; early-stage quantum fund.</td><td>Likely light paid; community/event-first</td><td>“Bridge funding gap”, “ecosystem building”, “new fund close”</td></tr><tr><td>Vsquared Ventures</td><td>Pan-European deep tech; highlights early quantum investments.</td><td>Likely LinkedIn content amplification; occasional display for reports</td><td>“Generational Growth Themes”, “new fund”, “portfolio milestone”</td></tr><tr><td>Playground Global</td><td>Frontier/deep tech; explicitly references quantum computing as “next gen compute”.</td><td>Often content-led; could use paid to distribute portfolio narratives and reports</td><td>“Next gen compute”, “breakthrough science → companies”, “portfolio story”</td></tr><tr><td>DCVC</td><td>Deep tech VC; publishes “Deep Tech Opportunities” content.</td><td>Likely uses paid to distribute flagship reports and capture emails</td><td>“Download report”, “industrial themes”, report snippets</td></tr><tr><td>Lux Capital</td><td>Early-stage science/tech; explicit quantum investments.</td><td>Likely PR-led + selective paid boosts; heavy content distribution</td><td>“Investing in breakthrough science”, “portfolio breakthroughs”, podcast clips</td></tr><tr><td>IQ Capital</td><td>European deep tech VC.</td><td>Likely LinkedIn always-on (hiring + portfolio)</td><td>“Deep tech in Europe”, “portfolio funding announcements”</td></tr><tr><td>Amadeus Capital Partners</td><td>Invests in AI, quantum, advanced computing.</td><td>Likely LinkedIn/industry publication sponsorship; retargeting for content</td><td>“Quantum networking milestone”, “commercial applications”</td></tr></tbody></table></div><p><strong>Competitive advantage implication for Firgun:</strong> many comparables skew earlier-stage or broader deep tech; Firgun can differentiate in paid by owning the <strong>“Series A/B quantum scaling partner”</strong> narrative and keyword space, and by offering <em>Series A/B-specific</em> content (pilots → repeatable revenue, hiring, commercialisation milestones).</p></div></div></section>
+          <section class="chapter reveal" id="channel-strategy-budgets-kpis-and-expected-cpl-ranges">
+            <header class="chapter-head">
+              <div class="chapter-number">05</div>
+              <div class="chapter-title-wrap">
+                <p class="chapter-kicker">Report section</p>
+                <h2>Channel strategy, budgets, KPIs, and expected CPL ranges</h2>
+              </div>
+            </header>
+            <div class="chapter-body">
+        
+          <div class="subsection reveal" id="channel-allocation-by-phase-recommended">
+            <p class="subsection-kicker">Focus area</p>
+            <h3>Channel allocation by phase (recommended)</h3>
+        <div class="table-wrap "><table><thead><tr><th>Phase</th><th>Monthly budget range</th><th>Primary goal</th><th>Recommended split (directional)</th></tr></thead><tbody><tr><td>Early (test &amp; instrument)</td><td>£10k–£25k</td><td>Measurement + prove cost per qualified meeting (CQM)</td><td>Search 25–35%, LinkedIn 35–45%, YouTube 5–15%, retargeting 10–15%, experiments 5–10%</td></tr><tr><td>Growth (scale proven plays)</td><td>£25k–£60k</td><td>Scale winners + introduce ABM</td><td>Search 20–30%, LinkedIn 30–40%, YouTube 10–20%, programmatic ABM 10–20%, retargeting 10–15%</td></tr><tr><td>Scale (always-on)</td><td>£60k–£150k</td><td>Always‑on + sponsorships/events</td><td>Search 15–25%, LinkedIn 25–35%, YouTube 15–25%, programmatic ABM 15–25%, podcasts/events 10–20%</td></tr></tbody></table></div></div>
+          <div class="subsection reveal" id="cost-and-performance-assumptions-used-for-cpl-cpa-ranges">
+            <p class="subsection-kicker">Focus area</p>
+            <h3>Cost and performance assumptions used for CPL/CPA ranges</h3>
+        <p>CPL/CPA ranges below are <strong>planning assumptions</strong> (not guarantees) and must be validated in-market. Where external benchmarks are referenced, they are <strong>industry aggregations</strong>, not platform commitments.</p><ul class="report-list"><li>Google Ads benchmarks: WordStream reports an overall average conversion rate around ~6.96% (2024) and an average cost per lead around ~$70.11 (Google Ads, cross-industry), while Finance &amp; Insurance conversion rates are markedly lower in their benchmark dataset.</li><li>LinkedIn benchmarks (directional): a benchmark compilation reports medians around CTR ~0.52%, CPC ~$3.94, CPM ~$31–$38, with lead gen forms often converting higher than external landing pages (dataset-dependent).</li><li>YouTube CPM benchmarks (directional): one benchmark source cites skippable in-stream CPM ranges around ~$5–$10 and non-skippable ~ ~$6–$10 (format and targeting dependent).</li><li>Podcast CPM benchmarks (directional): Acast cites $15–$30 CPM for pre-recorded ads and $25–$40 CPM for host-read sponsorships, varying by show, targeting, and placement.</li></ul></div>
+          <div class="subsection reveal" id="channel-by-channel-operating-plan">
+            <p class="subsection-kicker">Focus area</p>
+            <h3>Channel-by-channel operating plan</h3>
+        <div class="table-wrap "><table><thead><tr><th>Channel</th><th>Best-fit objectives</th><th>Campaign types to run</th><th>Targeting approach</th><th>Bidding &amp; optimisation</th><th>Creative that works</th><th>Best landing page</th><th>KPI focus</th><th>Expected CPL/CPA range (GBP, planning)</th></tr></thead><tbody><tr><td>Google Search</td><td>Dealflow, talent, limited LP</td><td>Brand, non-brand intent, competitor/alternatives, event keywords</td><td>High-intent keywords (Series A/B + quantum + funding); geo hubs; brand defence</td><td>Start with conservative bid controls → move to automated conversion bidding when conversion signals are stable (conversion setup guidance).</td><td>“Series A/B quantum scaling partner”, proof points (portfolio, hands-on)</td><td>/founders, /careers</td><td>CTR, CVR, CQM</td><td>Founders: £80–£300; Talent: £30–£150; LP: £300–£1,500 (low volume, gated)</td></tr><tr><td>Display (GDN) + retargeting</td><td>Brand recall, nurture</td><td>Site retargeting, contextual placements, custom segments</td><td>Retarget podcast/news visitors; contextual quantum/deep tech inventory</td><td>Optimise first to quality visits, then to leads; cap frequency</td><td>Quote cards, podcast clips, founder checklists</td><td>/insights, /founders</td><td>Frequency, engaged sessions, assisted conversion</td><td>£150–£600 (primarily assisted; judge by lift + CQM assist)</td></tr><tr><td>YouTube</td><td>Brand authority, community</td><td>Video reach, skippable in-stream, bumper, demand gen to site</td><td>Custom intent (quantum topics), placements on relevant channels; retarget visitors (skippable format spec).</td><td>CPM/CPV bidding; optimise to completed views or engaged views</td><td>15–30s “What we look for at Series A/B”, 6s bumpers, event speaker promos</td><td>/podcast, /insights, /events</td><td>VTR/CPV, brand search lift, engaged visits</td><td>Newsletter CPL-equivalent: £5–£25; founder lead assist: £200–£800</td></tr><tr><td>LinkedIn</td><td>Dealflow, LP ABM, talent</td><td>Sponsored content, document ads, lead gen forms, conversation ads</td><td>Job title + seniority + company lists (ABM); skills targeting</td><td>Optimise by form completion; use Insight Tag conversions where driving to site (conversion tracking setup).</td><td>Founder: “Series A/B readiness checklist”; LP: “Quantum market note” (gated); Talent: mission + credibility</td><td>/founders + lead forms; gated /investors</td><td>CPL, CQM rate, lead quality score</td><td>Founders: £200–£700; LP ABM: £400–£2,000; Talent: £80–£300</td></tr><tr><td>X/Twitter</td><td>Community, awareness, event amplification</td><td>Engagement, video views, site clicks</td><td>Interest/keyword targeting; follower lookalikes of quantum topics</td><td>Optimise to engaged clicks; cap frequency</td><td>Short POV clips, event commentary, podcast snippets</td><td>/podcast, /news</td><td>Engagement rate, quality sessions</td><td>£50–£250 (community); founder assist £200–£800</td></tr><tr><td>Facebook/Instagram</td><td>Retargeting, community</td><td>Retargeting, video views, newsletter lead forms</td><td>Primarily retarget site visitors and engaged audiences</td><td>Optimise to leads (Meta pixel “Lead” standard event definition).</td><td>Podcast reels, event promos, founder explainer carousels</td><td>/podcast, /newsletter</td><td>Newsletter CPL, frequency, assisted conv</td><td>Newsletter: £3–£20; founder assist: £200–£900</td></tr><tr><td>Reddit</td><td>Founder pipeline, community trust</td><td>Subreddit/context targeting, conversation-style ads, AMAs</td><td>Target quantum/AI communities; keyword targeting; promote “AMA” content (Reddit ad types).</td><td>Optimise to landing page quality first, then leads</td><td>“AMA with a quantum investor”; “Series A/B scaling pitfalls”</td><td>/insights, dedicated AMA page</td><td>CTR, engaged time, qualified visits</td><td>£60–£300 (traffic); £150–£600 (leads)</td></tr><tr><td>Podcasts (paid sponsorships)</td><td>Brand authority, LP adjacency</td><td>Host-read, baked-in, newsletter swaps</td><td>Target deep tech, quantum, institutional allocator shows</td><td>CPM buys; evaluate via brand search and direct traffic lift (Acast CPM guidance).</td><td>30–60s host-read with credibility hook + clear CTA</td><td>Vanity URL landing page</td><td>Reach, brand lift, assisted conv</td><td>CPM widely variable; use Acast ranges as planning baseline</td></tr><tr><td>Programmatic ABM (DSP)</td><td>LP ABM + late-stage founder ABM</td><td>Account-based display/video, retargeting</td><td>Named account lists, firmographics, contextual</td><td>vCPM optimisation; strict frequency caps; measure coverage + lift</td><td>High-credibility static + short video; “request materials”</td><td>Gated /investors, /founders</td><td>Account reach %, lift, meeting rate</td><td>LP: £600–£2,500; Founders: £250–£1,000 (pipeline influence)</td></tr><tr><td>Events (paid distribution + sponsorship)</td><td>Credibility, ecosystem, dealflow</td><td>Sponsorship + paid social amplification + remarketing</td><td>Amplify Firgun’s speaking/event calendar and recaps</td><td>Optimise to registrations + post-event meetings</td><td>“Meet us at [event]”, speaker clips, post-event highlights</td><td>/events + recap pages</td><td>Registrations, meeting set rate</td><td>Highly variable; treat as meeting CAC, not pure CPL</td></tr></tbody></table></div></div></div></section>
+          <section class="chapter reveal" id="measurement-tracking-attribution-and-reporting-cadence">
+            <header class="chapter-head">
+              <div class="chapter-number">06</div>
+              <div class="chapter-title-wrap">
+                <p class="chapter-kicker">Report section</p>
+                <h2>Measurement, tracking, attribution, and reporting cadence</h2>
+              </div>
+            </header>
+            <div class="chapter-body">
+        <p>Tracking and compliance must be designed together. Firgun’s legal page includes the disclaimer posture and references privacy/cookie policy and an investor portal.</p>
+          <div class="subsection reveal" id="conversion-events-to-implement-minimum-viable-set">
+            <p class="subsection-kicker">Focus area</p>
+            <h3>Conversion events to implement (minimum viable set)</h3>
+        <p><strong>Primary conversions (hard outcomes)</strong></p><ul class="report-list"><li>Contact form submit with “Type = Startup” (qualified founder enquiry)</li><li>Contact form submit with “Type = LP” (eligible investor enquiry; must remain compliant with disclaimer posture)</li><li>Calendar booking completion (recommended; currently unspecified)</li><li>Investor gated access request (eligibility acknowledged; investor portal access is restricted in legal terms)</li></ul><p><strong>Secondary conversions (soft outcomes)</strong></p><ul class="report-list"><li>Newsletter signup</li><li>Podcast engagement (e.g., episode page view, outbound clicks)</li><li>Event registrations + recap-page engagement</li></ul></div>
+          <div class="subsection reveal" id="ga4-tagging-principles">
+            <p class="subsection-kicker">Focus area</p>
+            <h3>GA4 + tagging principles</h3>
+        <ul class="report-list"><li>Use GA4 recommended events (e.g., “generate_lead” / lead-gen aligned events) and/or clear custom events with consistent naming conventions; Google documents recommended and custom event references.</li><li>Implement <strong>Google Ads conversion tracking</strong> using Google’s “web conversions” setup flow (via GA4 import or tag-based).</li><li>For deeper optimisation, import <strong>offline conversions</strong> (e.g., “qualified meeting held”, “IC reviewed”) using GCLID-based workflows; Google documents offline conversion measurement and GCLID imports.</li></ul></div>
+          <div class="subsection reveal" id="consent-cookies-and-measurement-reliability-uk-eu-reality">
+            <p class="subsection-kicker">Focus area</p>
+            <h3>Consent, cookies, and measurement reliability (UK/EU reality)</h3>
+        <ul class="report-list"><li>The UK ICO states you must clearly explain cookies and obtain consent (with limited “essential” exceptions), and the same rules apply to similar technologies that store/access device information.</li><li>The EDPB adopted guidelines clarifying the technical scope of ePrivacy rules beyond cookies to other tracking techniques (including pixels/URLs in the guideline set).</li><li>Use Google consent mode where relevant; Tag Manager documentation describes basic consent mode (tags restricted until user interaction/consent).</li></ul></div>
+          <div class="subsection reveal" id="pixel-setup-platform-essentials">
+            <p class="subsection-kicker">Focus area</p>
+            <h3>Pixel setup (platform essentials)</h3>
+        <ul class="report-list"><li>LinkedIn Insight Tag: add tag for conversion tracking and retargeting; LinkedIn documents Insight Tag and conversion rule setup.</li><li>Meta Pixel: use “Lead” standard event for form submissions (Meta defines “Lead” as information submission with follow-up expectation).</li><li>Reddit: align creative format to ad types (image, video, conversation, free-form); Reddit documents available ad types.</li></ul></div>
+          <div class="subsection reveal" id="utm-taxonomy-standardise-from-day-one">
+            <p class="subsection-kicker">Focus area</p>
+            <h3>UTM taxonomy (standardise from day one)</h3>
+        <p>Use a strict taxonomy to support multi-touch reporting and future automation.</p>
+    <div class="code-block">
+      <div class="code-label">text</div>
+      <pre><code>utm_source=google | linkedin | youtube | x | meta | reddit | programmatic | podcast | event_partner
+utm_medium=cpc | paid_social | paid_video | display | sponsorship
+utm_campaign={objective}_{audience}_{geo}_{quarter}_{theme}
+utm_content={format}_{hook}_{variant}
+utm_term={keyword_or_audience}</code></pre>
+    </div>
+  </div>
+          <div class="subsection reveal" id="reporting-cadence">
+            <p class="subsection-kicker">Focus area</p>
+            <h3>Reporting cadence</h3>
+        <ul class="report-list"><li><strong>Daily:</strong> spend pacing, tracking integrity, frequency spikes, search term hygiene</li><li><strong>Weekly:</strong> CPL/CQM by channel, lead quality review, creative fatigue, landing page CVR</li><li><strong>Monthly:</strong> attribution and pipeline influence review, channel mix shifts, test roadmap refresh</li></ul></div></div></section>
+          <section class="chapter reveal" id="creative-and-messaging-frameworks">
+            <header class="chapter-head">
+              <div class="chapter-number">07</div>
+              <div class="chapter-title-wrap">
+                <p class="chapter-kicker">Report section</p>
+                <h2>Creative and messaging frameworks</h2>
+              </div>
+            </header>
+            <div class="chapter-body">
+        <p>Firgun’s messaging already contains elements that map cleanly into paid creative: Series A/B quantum scale-up focus, “hands-on partner,” global mandate, and active ecosystem presence (podcast, events/news).</p>
+          <div class="subsection reveal" id="messaging-pillars-reusable-across-channels">
+            <p class="subsection-kicker">Focus area</p>
+            <h3>Messaging pillars (reusable across channels)</h3>
+        <ul class="report-list"><li><strong>Stage clarity:</strong> “Series A/B quantum scale-ups” (not generic deep tech).</li><li><strong>Commercialisation support:</strong> “beyond foundational research → market adoption / scalable revenue pathways.”</li><li><strong>Credibility proof:</strong> team/council and track record signals.</li><li><strong>Ecosystem leadership:</strong> podcast + speaking/event activation.</li></ul></div>
+          <div class="subsection reveal" id="founder-creative-framework">
+            <p class="subsection-kicker">Focus area</p>
+            <h3>Founder creative framework</h3>
+        <p><strong>Angles</strong></p><ul class="report-list"><li>“Are you truly Series A/B ready?” (readiness checklist)</li><li>“What quantum Series B investors underwrite” (benchmark note)</li><li>“Scaling a quantum team beyond the lab” (commercial + hiring readiness)</li></ul><p><strong>Formats</strong></p><ul class="report-list"><li>LinkedIn document ad: “Quantum Series A/B Scaling Checklist”</li><li>YouTube: 15–30s founder-facing clarity (“what we look for at Series A/B”) using skippable in-stream where appropriate</li><li>Search RSAs: “Series A/B quantum scale-ups | Hands-on partner”</li></ul><p><strong>CTA hierarchy</strong></p><ol class="report-list"><li>Book fit call (recommended; currently unspecified implementation)</li><li>Submit deck / intro</li><li>Subscribe to scaling insights (newsletter)</li></ol></div>
+          <div class="subsection reveal" id="lp-creative-framework-compliance-first">
+            <p class="subsection-kicker">Focus area</p>
+            <h3>LP creative framework (compliance-first)</h3>
+        <p>Firgun’s disclaimer posture requires eligibility orientation and avoidance of language that could be construed as an offer/solicitation.  UK FCA rules require financial promotions to be <strong>fair, clear and not misleading</strong>.</p><p><strong>LP-friendly angles</strong></p><ul class="report-list"><li>“Why Series A/B is the quantum bottleneck” (thesis)</li><li>“State of the quantum industry” with credible third-party data (QED‑C headline metrics)</li><li>“How we build access and diligence in a specialised market” (process-led, not return-led)</li></ul><p><strong>LP CTAs</strong></p><ul class="report-list"><li>“Request investor materials (professional investors only)” (gated)</li><li>“Meet Firgun at [event]” (relationship conversion)</li></ul></div>
+          <div class="subsection reveal" id="talent-creative-framework">
+            <p class="subsection-kicker">Focus area</p>
+            <h3>Talent creative framework</h3>
+        <p>Talent campaigns should remain mostly employer-brand until the “Careers” page has concrete roles (currently “coming soon”).</p><ul class="report-list"><li>LinkedIn: mission + credibility (“build a new standard for quantum VC operations” aligns with team messaging).</li><li>Search: brand + role intent (“quantum VC associate London”)</li></ul></div>
+          <div class="subsection reveal" id="ecosystem-partner-creative-framework">
+            <p class="subsection-kicker">Focus area</p>
+            <h3>Ecosystem partner creative framework</h3>
+        <p>Use concrete convening outcomes anchored to Firgun’s visible activity.</p><ul class="report-list"><li>“Co-host a quantum scale-up session”</li><li>“Invite Firgun speaker / podcast crossover”</li></ul></div></div></section>
+          <section class="chapter reveal" id="ninety-day-launch-plan-and-governance">
+            <header class="chapter-head">
+              <div class="chapter-number">08</div>
+              <div class="chapter-title-wrap">
+                <p class="chapter-kicker">Report section</p>
+                <h2>Ninety-day launch plan and governance</h2>
+              </div>
+            </header>
+            <div class="chapter-body">
+        
+          <div class="subsection reveal" id="timeline-and-milestones">
+            <p class="subsection-kicker">Focus area</p>
+            <h3>Timeline and milestones</h3>
+        
+      <div class="timeline-block">
+        <div class="timeline-meta">
+          <p class="timeline-label">90-day launch timeline</p>
+          <p class="timeline-copy">Converted from the markdown gantt block into a structured rollout timeline.</p>
+        </div>
+        <div class="timeline-groups">
+          
+                <section class="timeline-group">
+                  <h4>Foundations</h4>
+                  
+                        <div class="timeline-row">
+                          <div class="timeline-task">Measurement design (events, UTMs, CRM fields)</div>
+                          <div class="timeline-date">2026-04-08</div>
+                          <div class="timeline-duration">10d</div>
+                        </div>
+                      
+                        <div class="timeline-row">
+                          <div class="timeline-task">CMP + consent mode + tag audit</div>
+                          <div class="timeline-date">2026-04-08</div>
+                          <div class="timeline-duration">14d</div>
+                        </div>
+                      
+                        <div class="timeline-row">
+                          <div class="timeline-task">Landing pages (founders/insights/events)</div>
+                          <div class="timeline-date">2026-04-12</div>
+                          <div class="timeline-duration">18d</div>
+                        </div>
+                      
+                </section>
+              
+                <section class="timeline-group">
+                  <h4>Campaign build</h4>
+                  
+                        <div class="timeline-row">
+                          <div class="timeline-task">Creative kit v1 (founders, podcast, events)</div>
+                          <div class="timeline-date">2026-04-15</div>
+                          <div class="timeline-duration">14d</div>
+                        </div>
+                      
+                        <div class="timeline-row">
+                          <div class="timeline-task">Account structure + tracking QA</div>
+                          <div class="timeline-date">2026-04-18</div>
+                          <div class="timeline-duration">10d</div>
+                        </div>
+                      
+                </section>
+              
+                <section class="timeline-group">
+                  <h4>Launch and learn</h4>
+                  
+                        <div class="timeline-row">
+                          <div class="timeline-task">Google Search launch (brand + non-brand)</div>
+                          <div class="timeline-date">2026-04-25</div>
+                          <div class="timeline-duration">60d</div>
+                        </div>
+                      
+                        <div class="timeline-row">
+                          <div class="timeline-task">LinkedIn launch (founders + ABM test)</div>
+                          <div class="timeline-date">2026-04-28</div>
+                          <div class="timeline-duration">55d</div>
+                        </div>
+                      
+                        <div class="timeline-row">
+                          <div class="timeline-task">YouTube reach + retargeting launch</div>
+                          <div class="timeline-date">2026-05-05</div>
+                          <div class="timeline-duration">50d</div>
+                        </div>
+                      
+                        <div class="timeline-row">
+                          <div class="timeline-task">Retargeting (display + paid social)</div>
+                          <div class="timeline-date">2026-05-05</div>
+                          <div class="timeline-duration">50d</div>
+                        </div>
+                      
+                </section>
+              
+                <section class="timeline-group">
+                  <h4>Expansion</h4>
+                  
+                        <div class="timeline-row">
+                          <div class="timeline-task">Reddit pilot (founder community)</div>
+                          <div class="timeline-date">2026-05-20</div>
+                          <div class="timeline-duration">35d</div>
+                        </div>
+                      
+                        <div class="timeline-row">
+                          <div class="timeline-task">Programmatic ABM pilot (LP + late-stage founders)</div>
+                          <div class="timeline-date">2026-06-01</div>
+                          <div class="timeline-duration">30d</div>
+                        </div>
+                      
+                        <div class="timeline-row">
+                          <div class="timeline-task">Podcast sponsorship test</div>
+                          <div class="timeline-date">2026-06-10</div>
+                          <div class="timeline-duration">25d</div>
+                        </div>
+                      
+                </section>
+              
+                <section class="timeline-group">
+                  <h4>Scale decisions</h4>
+                  
+                        <div class="timeline-row">
+                          <div class="timeline-task">Creative refresh + winners scale</div>
+                          <div class="timeline-date">2026-06-20</div>
+                          <div class="timeline-duration">18d</div>
+                        </div>
+                      
+                        <div class="timeline-row">
+                          <div class="timeline-task">90-day review (CQM, pipeline influence, roadmap)</div>
+                          <div class="timeline-date">2026-07-05</div>
+                          <div class="timeline-duration">5d</div>
+                        </div>
+                      
+                </section>
+              
+        </div>
+      </div>
+    </div>
+          <div class="subsection reveal" id="suggested-a-b-tests-and-success-criteria">
+            <p class="subsection-kicker">Focus area</p>
+            <h3>Suggested A/B tests and success criteria</h3>
+        <div class="table-wrap "><table><thead><tr><th>Test</th><th>Hypothesis</th><th>Primary metric</th><th>Success criterion</th></tr></thead><tbody><tr><td>Founder landing page: “Book call” vs “Send deck”</td><td>Lower friction increases qualified conversions</td><td>Qualified meeting rate</td><td>+20% CQM at same or lower CPL</td></tr><tr><td>Founder messaging: “Series A/B scaling partner” vs “bridge funding gap”</td><td>Stage clarity improves CVR</td><td>CVR</td><td>+15% CVR on Search + LinkedIn</td></tr><tr><td>LinkedIn: Lead Gen Form vs website conversion</td><td>Lead form reduces drop-off</td><td>CPL</td><td>-20% CPL at ≥same lead quality (conversion tracking supported via Insight Tag).</td></tr><tr><td>YouTube: 6s bumper vs 15s skippable</td><td>Shorter improves reach efficiency</td><td>CPM / VTR</td><td>+25% reach at same spend (format-dependent)</td></tr><tr><td>Retargeting frequency cap: 3/wk vs 7/wk</td><td>Lower frequency reduces fatigue</td><td>Assisted conversions</td><td>Improved assisted CQM with stable reach</td></tr><tr><td>LP gating: single-step eligibility vs multi-step</td><td>Simpler gating improves completion</td><td>Completion rate</td><td>+15% completion with no compliance issues (align to Firgun disclaimer posture).</td></tr><tr><td>Podcast CTA: “subscribe” vs “download note”</td><td>Specific offer increases attribution</td><td>Direct traffic / brand lift</td><td>+10% branded/direct lift (podcast CPM ranges vary).</td></tr></tbody></table></div></div>
+          <div class="subsection reveal" id="optimisation-rules-practical-guardrails">
+            <p class="subsection-kicker">Focus area</p>
+            <h3>Optimisation rules (practical guardrails)</h3>
+        <ul class="report-list"><li>Scale budgets gradually (+20% every 3–5 days) on proven ad sets; reverse if CPL rises &gt;25% without an improvement in lead quality.</li><li>Weekly Search hygiene: negatives to remove unqualified demand; split talent vs founder intent.</li><li>Creative refresh cadence: every 14–21 days for paid social/video in small audiences to manage fatigue.</li><li>Adopt offline conversion imports (qualified meeting held) once CRM fields are mapped; Google documents offline conversion measurement and GCLID workflows.</li></ul></div>
+          <div class="subsection reveal" id="risks-constraints-and-compliance-considerations">
+            <p class="subsection-kicker">Focus area</p>
+            <h3>Risks, constraints, and compliance considerations</h3>
+        <p><strong>Financial promotions and LP marketing (UK/EU)</strong></p><ul class="report-list"><li>Firgun’s website explicitly states it is <strong>not an offer or solicitation</strong> and is directed to professional/institutional/sophisticated investors; materials are provided separately only to qualified persons.</li><li>FCA rules require communications/financial promotions to be <strong>fair, clear and not misleading</strong>.</li><li>FCA guidance (FG24/1) clarifies expectations for financial promotions on social media, relevant to LP-facing ads and any allocator-targeted distribution.</li></ul><p><strong>Privacy and tracking constraints</strong></p><ul class="report-list"><li>ICO cookie guidance requires clear information and consent for non-essential cookies and similar technologies.</li><li>EDPB guidance clarifies that ePrivacy rules cover tracking techniques beyond cookies, increasing compliance importance for pixels/URLs.</li><li>Consent mode implementation affects measurement completeness (tags may not fire until consent is captured, depending on configuration).</li></ul><p><strong>Market constraints and over-frequency risk</strong></p><ul class="report-list"><li>The pure-play quantum universe is hundreds, not tens of thousands; without frequency caps and content-led expansion, paid will saturate quickly.</li></ul></div>
+          <div class="subsection reveal" id="day-ninety-success-definition-what-good-looks-like">
+            <p class="subsection-kicker">Focus area</p>
+            <h3>Day‑ninety success definition (what “good” looks like)</h3>
+        <p>By day 90, success should be defined by <em>infrastructure + repeatability</em>, not just last-click CPL:</p><ul class="report-list"><li>Tracking integrity: conversions implemented and stable (Google Ads web conversions; LinkedIn Insight Tag; Meta Pixel lead event).</li><li>Repeatable founder acquisition loop: Search + LinkedIn retargeting producing qualified meetings at tolerable planning CPL ranges (calibrated to Firgun’s A/B focus).</li><li>Community flywheel: paid distribution grows newsletter/podcast audiences and improves remarketing efficiency over time.</li><li>LP motion: gated, compliance-safe ABM approach aligned to Firgun’s disclaimer posture and FCA expectations.</li></ul></div></div></section>
+        <p class="footer-note">
+          This page was generated from the markdown report and restyled using Firgun’s documented visual identity:
+          Roboto for headings, Courier Prime for body copy, a monochrome-first system, and Firgun Green / Grey Green / Sand as the primary layout palette.
+        </p>
+      </main>
+    </div>
+
+    <script>
+      const progressBar = document.getElementById("progress-bar");
+      const sections = Array.from(document.querySelectorAll(".chapter, .subsection"));
+      const tocLinks = Array.from(document.querySelectorAll(".toc a[data-target]"));
+      const revealItems = Array.from(document.querySelectorAll(".reveal"));
+
+      const revealObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("is-visible");
+              revealObserver.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.12 }
+      );
+
+      revealItems.forEach((item) => {
+        if (!item.classList.contains("is-visible")) revealObserver.observe(item);
+      });
+
+      const sectionObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (!entry.isIntersecting) return;
+            const id = entry.target.id;
+            tocLinks.forEach((link) => {
+              link.classList.toggle("is-active", link.dataset.target === id);
+            });
+          });
+        },
+        {
+          rootMargin: "-20% 0px -60% 0px",
+          threshold: 0.05,
+        }
+      );
+
+      sections.forEach((section) => sectionObserver.observe(section));
+
+      const updateProgress = () => {
+        const scrollTop = window.scrollY;
+        const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+        const progress = maxScroll > 0 ? Math.min(scrollTop / maxScroll, 1) : 0;
+        progressBar.style.width = (progress * 100).toFixed(2) + "%";
+      };
+
+      updateProgress();
+      window.addEventListener("scroll", updateProgress, { passive: true });
+      window.addEventListener("resize", updateProgress);
+    </script>
+  </body>
+</html>
