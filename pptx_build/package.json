@@ -1,0 +1,10 @@
+{
+  "name": "firgun-md-to-pptx",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Convert the paid media markdown report into a PowerPoint deck.",
+  "type": "commonjs",
+  "dependencies": {
+    "pptxgenjs": "^3.12.0"
+  }
+}
