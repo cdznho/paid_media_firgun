@@ -23,8 +23,6 @@ The new brief specifies **no founder/company targeting** (i.e., no dealflow acqu
 - **LP push:** **$30k total** (assume 2026-09-15 to 2026-11-15; ~2 months).  
 - **Scale scenario:** **unspecified** (recommend ranges provided below).
 
-**FX assumption (per brief):** 1 USD = 0.80 GBP → **$6k ≈ £4.8k**; **$30k ≈ £24k**.
-
 **Critical ambiguity (must be confirmed):** whether **$30k** is **total for the whole Sep–Nov window** or **per month** is **unspecified**. This strategy assumes **$30k total** across 2026-09-15 to 2026-11-15; if it is $30k/month, scale ABM and sponsorships materially. (Unspecified.)
 
 **Rationale for a May “trial” / Sep–Nov “push” structure (LP-first):**
