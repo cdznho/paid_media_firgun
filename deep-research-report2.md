@@ -40,7 +40,6 @@ The addressable LP audience is “large but sparse” on platforms; in practice,
 ### Planning audience size anchors
 
 - **Single family offices:** Deloitte estimates **8,030 single family offices** globally (2024). citeturn6search1  
-- **Quantum ecosystem context (credibility messaging, not targeting founders):** QED‑C’s industry snapshot (data current as of end‑2024) reports **6,502 quantum-engaged organisations** and **513 pure-play quantum companies**, underscoring the market’s specialised nature and why allocators demand domain credibility. citeturn8view1  
 
 Counts for institutional allocators (pensions, endowments, sovereign wealth funds) and funds-of-funds are **unspecified** in Firgun materials and vary by dataset; treat them as **ABM list sizes** rather than “open targeting audiences.” (Unspecified.)
 
