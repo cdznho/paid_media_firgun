@@ -734,45 +734,11 @@ function buildDocument(tokens, markdown) {
         color: rgba(12, 12, 12, 0.82);
       }
 
-      .hero-actions {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.9rem 1rem;
-        margin-top: 1.9rem;
-      }
-
-      .hero-actions a {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        min-height: 48px;
-        padding: 0.75rem 1.25rem;
-        border-radius: 999px;
-        border: 1px solid rgba(12, 12, 12, 0.12);
-        text-decoration: none;
-        transition: transform 220ms ease, background-color 220ms ease, border-color 220ms ease;
-      }
-
-      .hero-actions a:first-child {
-        background: var(--ink);
-        color: var(--paper);
-        border-color: var(--ink);
-      }
-
-      .hero-actions a:last-child {
-        background: rgba(255, 255, 255, 0.58);
-        backdrop-filter: blur(16px);
-      }
-
-      .hero-actions a:hover {
-        transform: translateY(-2px);
-      }
-
       .hero-metrics {
         display: grid;
         grid-template-columns: repeat(3, minmax(0, 1fr));
         gap: 1.1rem;
-        margin-top: 2.6rem;
+        margin-top: 1.9rem;
         padding-top: 1.2rem;
         border-top: 1px solid var(--line-strong);
       }
@@ -1345,10 +1311,6 @@ function buildDocument(tokens, markdown) {
           <p class="hero-kicker">Paid media strategy formatted in Firgun’s visual language</p>
           <h1>${escapeHtml(title)}</h1>
           <p class="hero-summary">${escapeHtml(heroSummary)}</p>
-          <div class="hero-actions">
-            <a href="#report-start">Read the report</a>
-            <a href="#measurement-tracking-attribution-and-reporting-cadence">Jump to measurement</a>
-          </div>
           <div class="hero-metrics">
             ${heroMetrics
               .map(
