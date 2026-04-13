@@ -297,9 +297,6 @@ function extractHeroMetrics(markdown) {
 
 function extractSignals(markdown) {
   const signals = [];
-  if (/Series A\/B/i.test(markdown)) {
-    signals.push("Series A/B quantum scale-up focus");
-  }
   if (/compliance-first/i.test(markdown) || /professional\/institutional\/sophisticated investors/i.test(markdown)) {
     signals.push("Compliance-first LP motion");
   }
