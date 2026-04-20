@@ -156,6 +156,24 @@
         font-size: 0.9rem;
       }
 
+      .site-nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin-bottom: 1.45rem;
+        color: rgba(12, 12, 12, 0.72);
+        font-size: 0.94rem;
+      }
+
+      .site-nav a {
+        text-decoration: none;
+        transition: color 180ms ease;
+      }
+
+      .site-nav a:hover {
+        color: var(--ink);
+      }
+
       .hero-kicker {
         margin: 0 0 0.85rem;
         color: var(--firgun-green-dark);
@@ -760,6 +778,9 @@
             <strong>FIRGUN</strong>
             <span>ventures</span>
           </div>
+          <nav class="site-nav" aria-label="Related pages">
+            <a href="linkedin-strategy.html">Proactive LinkedIn strategy</a>
+          </nav>
           <p class="hero-kicker">Paid media strategy formatted in Firgun’s visual language</p>
           <h1>LP-first paid media strategy for Firgun Ventures</h1>
           <p class="hero-summary">Firgun’s website and legal framing make it clear that paid media must be compliance-first and investor-eligibility-led: the site is “directed solely at professional, institutional, and sophisticated investors” and “does not constitute an offer” or solicitation, with any fund opportunity presented separately via confidential documentation only to those meeting regulatory/qualification requirements.</p>

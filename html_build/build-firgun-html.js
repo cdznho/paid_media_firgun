@@ -4,7 +4,7 @@ const fs = require("fs");
 const path = require("path");
 
 const args = process.argv.slice(2);
-const defaultInput = path.resolve(__dirname, "..", "deep-research-report.md");
+const defaultInput = path.resolve(__dirname, "..", "deep-research-report2.md");
 const defaultOutput = path.resolve(
   __dirname,
   "..",
@@ -704,6 +704,24 @@ function buildDocument(tokens, markdown) {
         font-size: 0.9rem;
       }
 
+      .site-nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin-bottom: 1.45rem;
+        color: rgba(12, 12, 12, 0.72);
+        font-size: 0.94rem;
+      }
+
+      .site-nav a {
+        text-decoration: none;
+        transition: color 180ms ease;
+      }
+
+      .site-nav a:hover {
+        color: var(--ink);
+      }
+
       .hero-kicker {
         margin: 0 0 0.85rem;
         color: var(--firgun-green-dark);
@@ -1308,6 +1326,9 @@ function buildDocument(tokens, markdown) {
             <strong>FIRGUN</strong>
             <span>ventures</span>
           </div>
+          <nav class="site-nav" aria-label="Related pages">
+            <a href="linkedin-strategy.html">Proactive LinkedIn strategy</a>
+          </nav>
           <p class="hero-kicker">Paid media strategy formatted in Firgun’s visual language</p>
           <h1>${escapeHtml(title)}</h1>
           <p class="hero-summary">${escapeHtml(heroSummary)}</p>

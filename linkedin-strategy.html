@@ -1,0 +1,1538 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Proactive LinkedIn Strategy for Kris Naudts and Zeynep Korüturk | Firgun Ventures</title>
+    <meta
+      name="description"
+      content="A proactive LinkedIn strategy for Kris Naudts and Zeynep Korüturk to build qualified allocator relationships with family offices, funds of funds, university endowments, and pension funds."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&family=Courier+Prime:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --firgun-green: #7e9f80;
+        --firgun-green-dark: #4b5f4c;
+        --firgun-green-mid: #647e66;
+        --grey-green: #c3cfc5;
+        --grey-green-light: #e4ebe5;
+        --sand: #e1ddd4;
+        --sand-light: #f3f0e9;
+        --paper: #ffffff;
+        --ink: #0c0c0c;
+        --muted: #5d625e;
+        --steel: #31596f;
+        --steel-dark: #1f3d4f;
+        --line: rgba(12, 12, 12, 0.13);
+        --line-strong: rgba(12, 12, 12, 0.24);
+        --shadow: 0 24px 80px rgba(12, 12, 12, 0.1);
+        --max-width: 1440px;
+        --content-width: 980px;
+        --radius: 8px;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        background:
+          linear-gradient(rgba(12, 12, 12, 0.05) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(12, 12, 12, 0.05) 1px, transparent 1px),
+          var(--sand-light);
+        background-size: 64px 64px, 64px 64px, auto;
+        color: var(--ink);
+        font-family: "Courier Prime", ui-monospace, SFMono-Regular, Menlo, monospace;
+        text-rendering: optimizeLegibility;
+      }
+
+      a {
+        color: inherit;
+        text-decoration-color: rgba(49, 89, 111, 0.7);
+        text-underline-offset: 0.2em;
+      }
+
+      button,
+      input,
+      textarea {
+        font: inherit;
+      }
+
+      .progress {
+        position: fixed;
+        inset: 0 auto auto 0;
+        width: 100%;
+        height: 3px;
+        background: transparent;
+        z-index: 100;
+      }
+
+      .progress > span {
+        display: block;
+        width: 0;
+        height: 100%;
+        background: linear-gradient(90deg, var(--firgun-green-dark), var(--steel));
+      }
+
+      .topbar {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        width: 100%;
+        padding: 1.25rem 2rem;
+      }
+
+      .topbar-inner {
+        width: min(100%, var(--max-width));
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+      }
+
+      .brand-lockup {
+        display: inline-flex;
+        flex-direction: column;
+        gap: 0.08rem;
+        text-decoration: none;
+      }
+
+      .brand-lockup strong {
+        font-family: "Roboto", system-ui, sans-serif;
+        font-size: 0.95rem;
+        font-weight: 900;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+      }
+
+      .brand-lockup span {
+        color: var(--firgun-green-dark);
+        font-size: 0.9rem;
+      }
+
+      .topbar nav {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        color: rgba(12, 12, 12, 0.72);
+        font-size: 0.95rem;
+      }
+
+      .topbar nav a {
+        text-decoration: none;
+        transition: color 180ms ease;
+      }
+
+      .topbar nav a:hover {
+        color: var(--ink);
+      }
+
+      .hero {
+        position: relative;
+        overflow: clip;
+        min-height: 94svh;
+        padding: 7.5rem 2rem 4rem;
+        display: grid;
+        align-items: end;
+        background:
+          linear-gradient(135deg, rgba(243, 240, 233, 0.96), rgba(228, 235, 229, 0.92) 58%, rgba(195, 207, 197, 0.86)),
+          var(--sand-light);
+      }
+
+      .hero::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background:
+          linear-gradient(90deg, rgba(75, 95, 76, 0.08) 1px, transparent 1px),
+          linear-gradient(rgba(75, 95, 76, 0.08) 1px, transparent 1px);
+        background-size: 120px 120px;
+        mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.18));
+        pointer-events: none;
+      }
+
+      .hero-shell {
+        position: relative;
+        z-index: 2;
+        width: min(100%, var(--max-width));
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: minmax(0, 0.92fr) minmax(420px, 0.78fr);
+        gap: 4rem;
+        align-items: end;
+      }
+
+      .hero-copy {
+        max-width: 780px;
+      }
+
+      .eyebrow,
+      .section-kicker,
+      .panel-kicker,
+      .metric-label {
+        margin: 0;
+        color: var(--firgun-green-dark);
+        font-size: 0.92rem;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4 {
+        margin: 0;
+        font-family: "Roboto", system-ui, sans-serif;
+        font-weight: 900;
+        line-height: 1;
+        letter-spacing: 0;
+      }
+
+      h1 {
+        max-width: 11ch;
+        margin-top: 0.9rem;
+        font-size: 6.6rem;
+      }
+
+      .hero-summary {
+        max-width: 64ch;
+        margin: 1.6rem 0 0;
+        font-size: 1.08rem;
+        line-height: 1.72;
+        color: rgba(12, 12, 12, 0.82);
+      }
+
+      .hero-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.8rem;
+        margin-top: 2rem;
+      }
+
+      .hero-actions a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 44px;
+        padding: 0.72rem 1rem;
+        border-radius: var(--radius);
+        text-decoration: none;
+        transition: transform 180ms ease, background-color 180ms ease, color 180ms ease;
+      }
+
+      .primary-action {
+        background: var(--ink);
+        color: var(--paper);
+      }
+
+      .secondary-action {
+        border: 1px solid var(--line-strong);
+        color: var(--ink);
+      }
+
+      .hero-actions a:hover {
+        transform: translateY(-2px);
+      }
+
+      .relationship-board {
+        position: relative;
+        padding: 1.1rem;
+        border: 1px solid rgba(12, 12, 12, 0.12);
+        border-radius: var(--radius);
+        background:
+          linear-gradient(180deg, rgba(255, 255, 255, 0.82), rgba(255, 255, 255, 0.5)),
+          rgba(195, 207, 197, 0.42);
+        box-shadow: var(--shadow);
+      }
+
+      .board-top {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        gap: 1rem;
+        padding: 0.35rem 0.15rem 1.05rem;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .board-top p {
+        margin: 0;
+      }
+
+      .board-title {
+        font-family: "Roboto", system-ui, sans-serif;
+        font-size: 1.55rem;
+        font-weight: 900;
+      }
+
+      .relationship-lanes {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 0.85rem;
+        margin-top: 1rem;
+      }
+
+      .owner-node,
+      .target-node,
+      .path-step,
+      .metric,
+      .role-block,
+      .message-card,
+      .source-link {
+        border: 1px solid rgba(12, 12, 12, 0.11);
+        border-radius: var(--radius);
+        background: rgba(255, 255, 255, 0.74);
+      }
+
+      .owner-node {
+        padding: 1rem;
+      }
+
+      .owner-node strong {
+        display: block;
+        font-family: "Roboto", system-ui, sans-serif;
+        font-size: 1.22rem;
+      }
+
+      .owner-node span {
+        display: block;
+        margin-top: 0.45rem;
+        color: var(--muted);
+        font-size: 0.92rem;
+        line-height: 1.5;
+      }
+
+      .target-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 0.75rem;
+        margin-top: 0.85rem;
+      }
+
+      .target-node {
+        min-height: 116px;
+        padding: 0.9rem;
+        display: grid;
+        align-content: space-between;
+        transition: transform 180ms ease, border-color 180ms ease;
+      }
+
+      .target-node:hover {
+        transform: translateY(-2px);
+        border-color: rgba(49, 89, 111, 0.42);
+      }
+
+      .target-node strong {
+        font-family: "Roboto", system-ui, sans-serif;
+        font-size: 1rem;
+      }
+
+      .target-node span {
+        color: var(--muted);
+        font-size: 0.86rem;
+        line-height: 1.35;
+      }
+
+      .pathway {
+        display: grid;
+        gap: 0.65rem;
+        margin-top: 0.9rem;
+      }
+
+      .path-step {
+        display: grid;
+        grid-template-columns: 2.2rem 1fr;
+        gap: 0.75rem;
+        align-items: start;
+        padding: 0.8rem;
+      }
+
+      .path-step b {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 2.2rem;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        background: var(--steel);
+        color: var(--paper);
+        font-family: "Roboto", system-ui, sans-serif;
+        font-size: 0.82rem;
+      }
+
+      .path-step span {
+        color: var(--muted);
+        font-size: 0.9rem;
+        line-height: 1.45;
+      }
+
+      .section-nav {
+        position: sticky;
+        top: 0;
+        z-index: 50;
+        background: rgba(243, 240, 233, 0.9);
+        border-top: 1px solid var(--line);
+        border-bottom: 1px solid var(--line);
+        backdrop-filter: blur(14px);
+      }
+
+      .section-nav-inner {
+        width: min(100%, var(--max-width));
+        margin: 0 auto;
+        display: flex;
+        gap: 1rem;
+        overflow-x: auto;
+        padding: 0.75rem 2rem;
+      }
+
+      .section-nav a {
+        white-space: nowrap;
+        text-decoration: none;
+        color: rgba(12, 12, 12, 0.72);
+        font-size: 0.9rem;
+        transition: color 180ms ease;
+      }
+
+      .section-nav a:hover,
+      .section-nav a.is-active {
+        color: var(--ink);
+      }
+
+      main {
+        width: min(100%, var(--max-width));
+        margin: 0 auto;
+        padding: 4.5rem 2rem 5rem;
+      }
+
+      .section {
+        scroll-margin-top: 5.5rem;
+        margin-bottom: 5rem;
+      }
+
+      .section-head {
+        max-width: var(--content-width);
+        margin-bottom: 1.7rem;
+      }
+
+      .section h2 {
+        max-width: 15ch;
+        margin-top: 0.45rem;
+        font-size: 3.1rem;
+      }
+
+      .section-lede {
+        max-width: 72ch;
+        margin: 1rem 0 0;
+        color: rgba(12, 12, 12, 0.78);
+        font-size: 1.04rem;
+        line-height: 1.72;
+      }
+
+      .strategy-grid {
+        display: grid;
+        grid-template-columns: minmax(0, 0.95fr) minmax(320px, 0.55fr);
+        gap: 2.6rem;
+        align-items: start;
+      }
+
+      .thesis-block {
+        max-width: var(--content-width);
+        padding-top: 1.2rem;
+        border-top: 1px solid var(--line-strong);
+      }
+
+      .thesis-block p,
+      .thesis-block li {
+        font-size: 1.04rem;
+        line-height: 1.78;
+      }
+
+      .thesis-block p {
+        margin: 0 0 1.15rem;
+      }
+
+      .plain-list {
+        margin: 1.2rem 0 0;
+        padding: 0;
+        list-style: none;
+        display: grid;
+        gap: 0.8rem;
+      }
+
+      .plain-list li {
+        position: relative;
+        padding-left: 1.35rem;
+      }
+
+      .plain-list li::before {
+        content: "";
+        position: absolute;
+        left: 0.05rem;
+        top: 0.74rem;
+        width: 0.52rem;
+        height: 0.52rem;
+        border-radius: 50%;
+        background: var(--steel);
+      }
+
+      .metric-stack {
+        display: grid;
+        gap: 0.85rem;
+      }
+
+      .metric {
+        padding: 1rem;
+      }
+
+      .metric strong {
+        display: block;
+        margin-top: 0.2rem;
+        font-family: "Roboto", system-ui, sans-serif;
+        font-size: 1.75rem;
+      }
+
+      .role-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1rem;
+      }
+
+      .role-block {
+        padding: 1.2rem;
+      }
+
+      .role-block h3,
+      .message-card h3 {
+        font-size: 1.45rem;
+      }
+
+      .role-block p,
+      .message-card p {
+        margin: 0.85rem 0 0;
+        color: rgba(12, 12, 12, 0.78);
+        line-height: 1.68;
+      }
+
+      .role-block ul {
+        margin: 1rem 0 0;
+        padding: 0;
+        list-style: none;
+        display: grid;
+        gap: 0.65rem;
+      }
+
+      .role-block li {
+        padding-top: 0.65rem;
+        border-top: 1px solid rgba(12, 12, 12, 0.08);
+        line-height: 1.55;
+      }
+
+      .segment-tabs {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.65rem;
+        margin-bottom: 1rem;
+      }
+
+      .segment-tab {
+        min-height: 42px;
+        padding: 0.58rem 0.85rem;
+        border: 1px solid var(--line-strong);
+        border-radius: var(--radius);
+        background: rgba(255, 255, 255, 0.58);
+        color: rgba(12, 12, 12, 0.72);
+        cursor: pointer;
+        transition: background-color 180ms ease, color 180ms ease, transform 180ms ease;
+      }
+
+      .segment-tab:hover,
+      .segment-tab.is-active {
+        background: var(--ink);
+        color: var(--paper);
+        transform: translateY(-1px);
+      }
+
+      .segment-panel {
+        border-top: 1px solid var(--line-strong);
+        padding-top: 1.5rem;
+      }
+
+      .segment-panel-grid {
+        display: grid;
+        grid-template-columns: minmax(0, 0.85fr) minmax(280px, 0.5fr);
+        gap: 2rem;
+      }
+
+      .segment-panel h3 {
+        margin-top: 0.35rem;
+        font-size: 2.3rem;
+      }
+
+      .segment-panel p {
+        line-height: 1.72;
+      }
+
+      .angle-list {
+        margin: 1rem 0 0;
+        padding: 0;
+        list-style: none;
+        display: grid;
+        gap: 0.7rem;
+      }
+
+      .angle-list li {
+        padding: 0.75rem 0;
+        border-top: 1px solid rgba(12, 12, 12, 0.1);
+        line-height: 1.55;
+      }
+
+      .table-wrap {
+        width: 100%;
+        overflow-x: auto;
+        border: 1px solid rgba(12, 12, 12, 0.11);
+        border-radius: var(--radius);
+        background: rgba(255, 255, 255, 0.72);
+        box-shadow: var(--shadow);
+      }
+
+      table {
+        width: 100%;
+        min-width: 820px;
+        border-collapse: collapse;
+      }
+
+      th,
+      td {
+        padding: 1rem;
+        border-bottom: 1px solid rgba(12, 12, 12, 0.08);
+        vertical-align: top;
+        text-align: left;
+        line-height: 1.55;
+      }
+
+      th {
+        background: var(--grey-green);
+        font-family: "Roboto", system-ui, sans-serif;
+        font-size: 0.94rem;
+      }
+
+      tbody tr:last-child td {
+        border-bottom: none;
+      }
+
+      tbody tr:nth-child(even) td {
+        background: rgba(225, 221, 212, 0.22);
+      }
+
+      .sequence {
+        display: grid;
+        gap: 0;
+        border-top: 1px solid var(--line-strong);
+      }
+
+      .sequence-row {
+        display: grid;
+        grid-template-columns: 92px minmax(0, 0.55fr) minmax(0, 1fr);
+        gap: 1.3rem;
+        padding: 1.1rem 0;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .sequence-row strong {
+        font-family: "Roboto", system-ui, sans-serif;
+      }
+
+      .sequence-row p {
+        margin: 0;
+        color: rgba(12, 12, 12, 0.78);
+        line-height: 1.65;
+      }
+
+      .message-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1rem;
+      }
+
+      .message-card {
+        padding: 1.1rem;
+      }
+
+      .message-text {
+        padding-top: 0.85rem;
+        border-top: 1px solid rgba(12, 12, 12, 0.1);
+        font-size: 0.98rem;
+      }
+
+      .workflow {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 0;
+        border-top: 1px solid var(--line-strong);
+        border-bottom: 1px solid var(--line-strong);
+      }
+
+      .workflow-step {
+        padding: 1.15rem 1rem;
+        border-right: 1px solid var(--line);
+      }
+
+      .workflow-step:last-child {
+        border-right: none;
+      }
+
+      .workflow-step span {
+        color: var(--steel);
+        font-size: 0.9rem;
+      }
+
+      .workflow-step h3 {
+        margin-top: 0.45rem;
+        font-size: 1.35rem;
+      }
+
+      .workflow-step p {
+        margin: 0.7rem 0 0;
+        color: rgba(12, 12, 12, 0.75);
+        line-height: 1.6;
+      }
+
+      .source-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 0.85rem;
+      }
+
+      .source-link {
+        display: block;
+        padding: 1rem;
+        min-height: 128px;
+        text-decoration: none;
+        transition: transform 180ms ease, border-color 180ms ease;
+      }
+
+      .source-link:hover {
+        transform: translateY(-2px);
+        border-color: rgba(49, 89, 111, 0.42);
+      }
+
+      .source-link strong {
+        display: block;
+        font-family: "Roboto", system-ui, sans-serif;
+      }
+
+      .source-link span {
+        display: block;
+        margin-top: 0.55rem;
+        color: var(--muted);
+        font-size: 0.92rem;
+        line-height: 1.5;
+      }
+
+      .footer-note {
+        max-width: var(--content-width);
+        padding-top: 1.35rem;
+        border-top: 1px solid var(--line-strong);
+        color: var(--muted);
+        font-size: 0.95rem;
+        line-height: 1.65;
+      }
+
+      .reveal {
+        opacity: 0;
+        transform: translateY(24px);
+        transition: opacity 680ms ease, transform 680ms ease;
+      }
+
+      .reveal.is-visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        html {
+          scroll-behavior: auto;
+        }
+
+        .reveal,
+        .hero-actions a,
+        .segment-tab,
+        .source-link,
+        .target-node {
+          transition: none;
+        }
+      }
+
+      @media (max-width: 1120px) {
+        .hero-shell,
+        .strategy-grid,
+        .segment-panel-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .relationship-board {
+          max-width: 760px;
+        }
+
+        h1 {
+          font-size: 5.2rem;
+        }
+
+        .workflow,
+        .source-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+      }
+
+      @media (max-width: 760px) {
+        body {
+          background-size: 48px 48px, 48px 48px, auto;
+        }
+
+        .topbar {
+          padding: 1rem;
+        }
+
+        .topbar-inner {
+          align-items: flex-start;
+          flex-direction: column;
+        }
+
+        .topbar nav {
+          width: 100%;
+          overflow-x: auto;
+          padding-bottom: 0.2rem;
+        }
+
+        .hero {
+          min-height: auto;
+          padding: 8.25rem 1rem 2.5rem;
+        }
+
+        .hero-shell,
+        .relationship-lanes,
+        .target-grid,
+        .role-grid,
+        .message-grid,
+        .workflow,
+        .source-grid {
+          grid-template-columns: 1fr;
+        }
+
+        h1 {
+          max-width: 10ch;
+          font-size: 3.55rem;
+        }
+
+        .section-nav-inner,
+        main {
+          padding-left: 1rem;
+          padding-right: 1rem;
+        }
+
+        main {
+          padding-top: 3rem;
+        }
+
+        .section h2 {
+          font-size: 2.35rem;
+        }
+
+        .segment-panel h3 {
+          font-size: 1.9rem;
+        }
+
+        .sequence-row {
+          grid-template-columns: 1fr;
+          gap: 0.4rem;
+        }
+
+        .workflow-step {
+          border-right: none;
+          border-bottom: 1px solid var(--line);
+        }
+
+        .workflow-step:last-child {
+          border-bottom: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="progress" aria-hidden="true"><span id="progress-bar"></span></div>
+
+    <header class="topbar" aria-label="Site header">
+      <div class="topbar-inner">
+        <a class="brand-lockup" href="index.html">
+          <strong>FIRGUN</strong>
+          <span>ventures</span>
+        </a>
+        <nav aria-label="Related pages">
+          <a href="index.html">Paid media report</a>
+          <a href="#segments">Allocator playbooks</a>
+          <a href="#messages">Message bank</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="hero-shell">
+        <div class="hero-copy reveal is-visible">
+          <p class="eyebrow">Proactive LinkedIn strategy</p>
+          <h1>Kris Naudts and Zeynep Korüturk</h1>
+          <p class="hero-summary">
+            A relationship-led LinkedIn playbook for earning qualified conversations with family offices,
+            funds of funds, university endowments, and pension funds without turning allocator trust into
+            a volume game.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-action" href="#playbook">Open the playbook</a>
+            <a class="secondary-action" href="#compliance">Review guardrails</a>
+          </div>
+        </div>
+
+        <aside class="relationship-board reveal is-visible" aria-label="Relationship map">
+          <div class="board-top">
+            <p class="panel-kicker">Operating model</p>
+            <p class="board-title">Signal before ask</p>
+          </div>
+          <div class="relationship-lanes">
+            <div class="owner-node">
+              <strong>Kris</strong>
+              <span>Institutional thesis, allocation fit, manager-selection questions, and governance credibility.</span>
+            </div>
+            <div class="owner-node">
+              <strong>Zeynep</strong>
+              <span>Ecosystem context, relationship bridges, warm introductions, and event-led follow-up.</span>
+            </div>
+          </div>
+          <div class="target-grid">
+            <div class="target-node">
+              <strong>Family Offices</strong>
+              <span>Discretion, conviction, access, and private dialogue.</span>
+            </div>
+            <div class="target-node">
+              <strong>Funds of Funds</strong>
+              <span>Category specialist fit and repeatable manager edge.</span>
+            </div>
+            <div class="target-node">
+              <strong>Endowments</strong>
+              <span>Long-horizon innovation exposure and academic adjacency.</span>
+            </div>
+            <div class="target-node">
+              <strong>Pension Funds</strong>
+              <span>Risk governance, reporting discipline, and portfolio role.</span>
+            </div>
+          </div>
+          <div class="pathway">
+            <div class="path-step">
+              <b>1</b>
+              <span>Map account lists, save leads, and observe real activity signals.</span>
+            </div>
+            <div class="path-step">
+              <b>2</b>
+              <span>Publish point-of-view content that gives allocators a reason to respond.</span>
+            </div>
+            <div class="path-step">
+              <b>3</b>
+              <span>Move only high-signal relationships into private, eligibility-gated conversations.</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <nav class="section-nav" aria-label="Page sections">
+      <div class="section-nav-inner">
+        <a href="#playbook">Playbook</a>
+        <a href="#roles">Kris and Zeynep</a>
+        <a href="#segments">Segments</a>
+        <a href="#sequence">Outreach</a>
+        <a href="#messages">Messages</a>
+        <a href="#cadence">30 days</a>
+        <a href="#measurement">Measurement</a>
+        <a href="#compliance">Guardrails</a>
+      </div>
+    </nav>
+
+    <main>
+      <section class="section reveal" id="playbook">
+        <div class="strategy-grid">
+          <div>
+            <header class="section-head">
+              <p class="section-kicker">Strategic posture</p>
+              <h2>Build allocator gravity first.</h2>
+              <p class="section-lede">
+                Kris and Zeynep should use LinkedIn as a warm relationship system: visible expertise,
+                account-specific engagement, and carefully timed private outreach. The goal is not
+                broad reach. It is a short list of credible allocator conversations.
+              </p>
+            </header>
+            <div class="thesis-block">
+              <p>
+                The motion should feel like investor relations, not sales development. Every public
+                post should be educational and non-offer oriented. Every private message should be
+                personalized, low-pressure, and anchored to a reason the allocator might care now:
+                quantum timing, venture allocation fit, manager selection, governance, or event context.
+              </p>
+              <ul class="plain-list">
+                <li><strong>Use named account lists.</strong> Start from priority institutions, then map relevant people and warm paths.</li>
+                <li><strong>Separate public content from fund-specific materials.</strong> Public LinkedIn activity should stay thesis-led and educational.</li>
+                <li><strong>Let the two profiles carry different signals.</strong> Kris leads institutional conviction; Zeynep opens ecosystem and relationship context.</li>
+                <li><strong>Route interest into controlled next steps.</strong> Qualified interest should move to email, a meeting, or an eligibility-gated investor flow.</li>
+              </ul>
+            </div>
+          </div>
+          <aside class="metric-stack" aria-label="Recommended operating metrics">
+            <div class="metric">
+              <p class="metric-label">Primary objective</p>
+              <strong>Qualified allocator meetings</strong>
+            </div>
+            <div class="metric">
+              <p class="metric-label">Working audience</p>
+              <strong>Named accounts</strong>
+            </div>
+            <div class="metric">
+              <p class="metric-label">Public content rule</p>
+              <strong>Educate, do not solicit</strong>
+            </div>
+            <div class="metric">
+              <p class="metric-label">Outreach rule</p>
+              <strong>Manual and personal</strong>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section reveal" id="roles">
+        <header class="section-head">
+          <p class="section-kicker">Profile roles</p>
+          <h2>Two voices, one relationship system.</h2>
+          <p class="section-lede">
+            The profiles should reinforce each other without duplicating each other. Kris should be the
+            allocator-facing thesis voice. Zeynep should be the relationship, ecosystem, and follow-up voice.
+          </p>
+        </header>
+        <div class="role-grid">
+          <article class="role-block">
+            <h3>Kris Naudts</h3>
+            <p>
+              Position Kris as the senior institutional voice for why quantum merits serious allocator
+              attention and how a specialist manager thinks about scaling risk.
+            </p>
+            <ul>
+              <li><strong>Profile headline:</strong> Quantum VC | Series A/B scaling | Information for professional investors</li>
+              <li><strong>Weekly posts:</strong> one institutional thesis post, one diligence or governance post.</li>
+              <li><strong>Commenting lane:</strong> CIOs, private markets leaders, FoF partners, and endowment investment staff.</li>
+              <li><strong>Private ask:</strong> "Would it be useful to compare notes on how quantum fits into venture allocation?"</li>
+            </ul>
+          </article>
+          <article class="role-block">
+            <h3>Zeynep Korüturk</h3>
+            <p>
+              Position Zeynep as the bridge between Firgun's ecosystem insight and the allocator's need
+              for context, access, and trusted introductions.
+            </p>
+            <ul>
+              <li><strong>Profile headline:</strong> Quantum venture ecosystem | LP relationships | Firgun Ventures</li>
+              <li><strong>Weekly posts:</strong> one ecosystem signal post, one event or conversation-led post.</li>
+              <li><strong>Commenting lane:</strong> family office principals, university networks, allocators at conferences, and partner networks.</li>
+              <li><strong>Private ask:</strong> "Happy to share the non-confidential notes we are using with institutional investors."</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section reveal" id="segments">
+        <header class="section-head">
+          <p class="section-kicker">Allocator playbooks</p>
+          <h2>Switch the angle by institution type.</h2>
+          <p class="section-lede">
+            The same quantum narrative will not work equally across each allocator category. Use the
+            selector to keep the message specific before Kris or Zeynep starts engaging.
+          </p>
+        </header>
+        <div class="segment-tabs" role="tablist" aria-label="Allocator segment strategy">
+          <button class="segment-tab is-active" type="button" data-segment="family">Family offices</button>
+          <button class="segment-tab" type="button" data-segment="fof">Funds of funds</button>
+          <button class="segment-tab" type="button" data-segment="endowment">University endowments</button>
+          <button class="segment-tab" type="button" data-segment="pension">Pension funds</button>
+        </div>
+        <div class="segment-panel" id="segment-panel" aria-live="polite">
+          <div class="segment-panel-grid">
+            <div>
+              <p class="panel-kicker" id="segment-kicker">Family offices</p>
+              <h3 id="segment-title">Private conviction before formal process.</h3>
+              <p id="segment-copy">
+                Family offices often respond to discreet, high-conviction conversations where the
+                manager can frame the category without overselling it. Prioritize principals, CIOs,
+                investment directors, and trusted advisors.
+              </p>
+              <ul class="angle-list" id="segment-angles">
+                <li>Lead with why quantum is becoming institutionally legible now.</li>
+                <li>Use Kris for conviction and Zeynep for warm bridges through events or shared networks.</li>
+                <li>Offer a short non-confidential investor note before asking for a meeting.</li>
+              </ul>
+            </div>
+            <aside class="metric-stack">
+              <div class="metric">
+                <p class="metric-label">Best first touch</p>
+                <strong id="segment-touch">Warm comment, then connection</strong>
+              </div>
+              <div class="metric">
+                <p class="metric-label">Primary proof</p>
+                <strong id="segment-proof">Specialist thesis and access</strong>
+              </div>
+              <div class="metric">
+                <p class="metric-label">Conversion event</p>
+                <strong id="segment-conversion">Private conversation</strong>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <section class="section reveal" id="targeting">
+        <header class="section-head">
+          <p class="section-kicker">Target list architecture</p>
+          <h2>Work accounts before leads.</h2>
+          <p class="section-lede">
+            Build the list in three layers: institutions, buying committees, and relationship paths.
+            This keeps LinkedIn activity intentional and prevents wasted outreach to mismatched contacts.
+          </p>
+        </header>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Layer</th>
+                <th>Fields to capture</th>
+                <th>LinkedIn action</th>
+                <th>Owner logic</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Account</td>
+                <td>Institution type, geography, AUM band if known, allocator priority, existing relationship, upcoming event overlap.</td>
+                <td>Save company or school where available; add to account list; follow pages and senior staff.</td>
+                <td>Kris owns institutional fit. Zeynep owns relationship path and event context.</td>
+              </tr>
+              <tr>
+                <td>Buying committee</td>
+                <td>CIO, deputy CIO, head of private markets, head of alternatives, VC/PE lead, investment director, principal, partner.</td>
+                <td>Save leads, monitor posts and job changes, engage manually before connecting.</td>
+                <td>Kris engages decision makers. Zeynep engages connectors, advisors, and event-adjacent contacts.</td>
+              </tr>
+              <tr>
+                <td>Signal</td>
+                <td>Posted about venture, quantum, deep tech, manager selection, private markets, AI infrastructure, university research, or governance.</td>
+                <td>Comment with a useful point of view. Do not pitch in comments.</td>
+                <td>Whoever can add the sharper contextual insight should engage first.</td>
+              </tr>
+              <tr>
+                <td>Next step</td>
+                <td>Connection status, last touch, content shared, reply status, qualification, meeting status, and compliance review state.</td>
+                <td>Move only engaged or relevant contacts into private messaging.</td>
+                <td>Use one shared CRM or tracker so both profiles avoid duplicate outreach.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="section reveal" id="sequence">
+        <header class="section-head">
+          <p class="section-kicker">Outbound sequence</p>
+          <h2>Manual touches, measured restraint.</h2>
+          <p class="section-lede">
+            No automation, no scraping, no bulk connection waves. The sequence below keeps LinkedIn
+            native, human, and appropriate for senior allocator audiences.
+          </p>
+        </header>
+        <div class="sequence">
+          <div class="sequence-row">
+            <strong>Day 0</strong>
+            <p>Research</p>
+            <p>Confirm the account, role, investment remit, recent posts, mutual connections, and likely relevance to quantum or venture allocation.</p>
+          </div>
+          <div class="sequence-row">
+            <strong>Day 1-5</strong>
+            <p>Visible value</p>
+            <p>Follow the person, comment once or twice with a specific observation, and share a public post that answers a question they may already have.</p>
+          </div>
+          <div class="sequence-row">
+            <strong>Day 6-10</strong>
+            <p>Connection</p>
+            <p>Send a short connection request tied to their role or recent topic. Do not include fund terms, performance language, or a hard meeting ask.</p>
+          </div>
+          <div class="sequence-row">
+            <strong>Day 11-16</strong>
+            <p>Value note</p>
+            <p>After acceptance, send one useful note: a non-confidential insight, event takeaway, or allocator question. Ask whether comparing notes would be useful.</p>
+          </div>
+          <div class="sequence-row">
+            <strong>Day 17-24</strong>
+            <p>Qualification</p>
+            <p>If they respond, move the conversation to email or a meeting and use the investor eligibility flow before sharing any fund-specific materials.</p>
+          </div>
+          <div class="sequence-row">
+            <strong>Day 30+</strong>
+            <p>Nurture</p>
+            <p>If there is no reply, stop pushing. Keep light public engagement and revisit only when there is a real event, article, or introduction reason.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section reveal" id="messages">
+        <header class="section-head">
+          <p class="section-kicker">Message bank</p>
+          <h2>Short scripts for senior allocators.</h2>
+          <p class="section-lede">
+            These are starting points. Each message should be edited with the person's institution,
+            recent activity, geography, or event context before sending.
+          </p>
+        </header>
+        <div class="message-grid">
+          <article class="message-card">
+            <h3>Family office connection</h3>
+            <p class="message-text">
+              I saw your work around private markets and long-horizon technology exposure. Kris and I are
+              mapping how professional investors are thinking about quantum as it moves from research
+              into scaling companies. Thought it would be useful to connect.
+            </p>
+          </article>
+          <article class="message-card">
+            <h3>Funds of funds note</h3>
+            <p class="message-text">
+              Your comments on specialist managers resonated. One question we keep hearing from allocators
+              is how to diligence a category where technical depth and venture discipline both matter.
+              Happy to compare notes if useful.
+            </p>
+          </article>
+          <article class="message-card">
+            <h3>Endowment bridge</h3>
+            <p class="message-text">
+              Given your university's proximity to research-led innovation, I thought our non-confidential
+              quantum market notes may be relevant. No offer or solicitation - just a useful lens on how
+              the category is becoming investable.
+            </p>
+          </article>
+          <article class="message-card">
+            <h3>Pension fund opener</h3>
+            <p class="message-text">
+              I appreciated your focus on governance and portfolio construction. We are having careful
+              conversations with institutional investors about where specialist venture exposure can fit,
+              and where it should not. Would a short exchange be useful?
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section reveal" id="cadence">
+        <header class="section-head">
+          <p class="section-kicker">First 30 days</p>
+          <h2>Make the rhythm visible.</h2>
+          <p class="section-lede">
+            The first month should create a repeatable operating cadence, not chase meetings too early.
+            Treat it as a disciplined relationship build with a weekly review.
+          </p>
+        </header>
+        <div class="workflow">
+          <div class="workflow-step">
+            <span>Week 1</span>
+            <h3>Profiles and lists</h3>
+            <p>Refresh both profiles, build Tier 1 account lists, save leads, and agree qualification fields.</p>
+          </div>
+          <div class="workflow-step">
+            <span>Week 2</span>
+            <h3>Content launch</h3>
+            <p>Publish first thesis posts, begin senior comments, and test the four segment-specific angles.</p>
+          </div>
+          <div class="workflow-step">
+            <span>Week 3</span>
+            <h3>Private touches</h3>
+            <p>Send the first manual connection notes to people who have a clear reason to care.</p>
+          </div>
+          <div class="workflow-step">
+            <span>Week 4</span>
+            <h3>Review and tighten</h3>
+            <p>Score replies, meeting quality, profile views, and segment resonance. Cut weak angles fast.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section reveal" id="measurement">
+        <header class="section-head">
+          <p class="section-kicker">Measurement</p>
+          <h2>Measure quality, not noise.</h2>
+          <p class="section-lede">
+            LinkedIn metrics are useful only when tied back to account coverage and qualified
+            conversations. A smaller, better list beats a wider audience every time.
+          </p>
+        </header>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Metric</th>
+                <th>Why it matters</th>
+                <th>Review cadence</th>
+                <th>Decision rule</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Tier 1 account coverage</td>
+                <td>Shows whether the right institutions are actually seeing Kris and Zeynep.</td>
+                <td>Weekly</td>
+                <td>Add relationship paths before expanding the list.</td>
+              </tr>
+              <tr>
+                <td>Meaningful comments from target contacts</td>
+                <td>Best public signal that content is earning attention from allocators.</td>
+                <td>Weekly</td>
+                <td>Turn recurring commenters into private conversations.</td>
+              </tr>
+              <tr>
+                <td>Connection acceptance rate</td>
+                <td>Indicates message fit and account relevance.</td>
+                <td>Weekly</td>
+                <td>Rewrite intros if acceptance is weak by segment.</td>
+              </tr>
+              <tr>
+                <td>Reply quality</td>
+                <td>More important than reply volume in a senior allocator audience.</td>
+                <td>Weekly</td>
+                <td>Score replies by fit, timing, authority, and next-step clarity.</td>
+              </tr>
+              <tr>
+                <td>Qualified meetings</td>
+                <td>The actual business outcome.</td>
+                <td>Monthly</td>
+                <td>Scale only the segment and message combinations that create credible meetings.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="section reveal" id="paid-support">
+        <header class="section-head">
+          <p class="section-kicker">Optional paid support</p>
+          <h2>Use paid LinkedIn as air cover.</h2>
+          <p class="section-lede">
+            Paid activity should amplify credibility around named accounts rather than replace manual
+            relationship work. Start with account lists, document ads, video views, and conservative
+            retargeting where consent and policy allow.
+          </p>
+        </header>
+        <div class="thesis-block">
+          <ul class="plain-list">
+            <li><strong>Company list targeting:</strong> Upload priority family office, FoF, endowment, and pension accounts, then refine by seniority and job function where audience size allows.</li>
+            <li><strong>Document ads:</strong> Promote a short non-confidential "Quantum allocator note" from Kris, with a soft CTA to request information.</li>
+            <li><strong>Video retargeting:</strong> Use short clips from Kris or Zeynep explaining one allocator question, then retarget engaged viewers with the investor note.</li>
+            <li><strong>Lead Gen Forms:</strong> Use only if privacy policy, eligibility language, and compliance review are ready. Keep forms short and qualification-led.</li>
+            <li><strong>UK targeting:</strong> Treat financial services verification as a launch dependency before any UK-targeted financial services ads.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section reveal" id="compliance">
+        <header class="section-head">
+          <p class="section-kicker">Guardrails and sources</p>
+          <h2>Keep the motion clean.</h2>
+          <p class="section-lede">
+            This page is a marketing strategy, not legal advice. Before launch, every profile claim,
+            post template, ad, landing page, and investor handoff should be reviewed against Firgun's
+            regulatory posture and the relevant jurisdiction.
+          </p>
+        </header>
+        <div class="thesis-block">
+          <ul class="plain-list">
+            <li><strong>No offer language in public posts.</strong> Keep public content educational, thesis-led, and balanced.</li>
+            <li><strong>No performance promises.</strong> Avoid return expectations, guarantees, or urgency framing.</li>
+            <li><strong>No automation or scraping.</strong> Manual work is slower, but it protects account integrity and trust.</li>
+            <li><strong>No fund-specific materials before eligibility gating.</strong> Move serious interest into a controlled investor flow.</li>
+            <li><strong>No duplicate outreach.</strong> Kris and Zeynep should share one tracker and one owner per relationship.</li>
+          </ul>
+        </div>
+        <div class="source-grid" aria-label="Source links">
+          <a class="source-link" href="https://www.linkedin.com/help/linkedin/answer/a424655" target="_blank" rel="noreferrer">
+            <strong>LinkedIn targeting options</strong>
+            <span>Audience attributes, Matched Audiences, retargeting sources, EEA/Switzerland limits, and minimum audience size.</span>
+          </a>
+          <a class="source-link" href="https://www.linkedin.com/help/lms/answer/a423102" target="_blank" rel="noreferrer">
+            <strong>Company list targeting</strong>
+            <span>Company list uploads for priority companies, organizations, and schools, refined by seniority or job function.</span>
+          </a>
+          <a class="source-link" href="https://www.linkedin.com/help/linkedin/answer/a427102/" target="_blank" rel="noreferrer">
+            <strong>Lead Gen Forms</strong>
+            <span>Lead form creation and approval requirements, including the need for a valid privacy policy URL.</span>
+          </a>
+          <a class="source-link" href="https://www.linkedin.com/help/lms/answer/a6238495" target="_blank" rel="noreferrer">
+            <strong>UK financial services verification</strong>
+            <span>LinkedIn's pre-approval requirement for UK-targeted financial services or products ads.</span>
+          </a>
+          <a class="source-link" href="https://www.linkedin.com/help/linkedin/answer/a102025/inmail-in-sales-navigator-overview" target="_blank" rel="noreferrer">
+            <strong>Sales Navigator InMail</strong>
+            <span>InMails must be sent individually, credits are limited, and personalization is recommended.</span>
+          </a>
+          <a class="source-link" href="https://www.linkedin.com/help/linkedin/answer/a1341387/prohibited-software-and-extensions" target="_blank" rel="noreferrer">
+            <strong>Prohibited automation</strong>
+            <span>LinkedIn restrictions on crawlers, bots, scraping, automated messages, fake accounts, and fake engagement.</span>
+          </a>
+          <a class="source-link" href="https://www.fca.org.uk/publications/finalised-guidance/fg24-1-finalised-guidance-financial-promotions-social-media" target="_blank" rel="noreferrer">
+            <strong>FCA social media guidance</strong>
+            <span>FG24/1 on social media financial promotions, including fair, clear, and not misleading communications.</span>
+          </a>
+        </div>
+      </section>
+
+      <p class="footer-note">
+        Page added for GitHub Pages as a standalone Firgun strategy asset. It is designed to sit next to
+        the paid media report and can be opened directly at <code>linkedin-strategy.html</code>.
+      </p>
+    </main>
+
+    <script>
+      const progressBar = document.getElementById("progress-bar");
+      const navLinks = Array.from(document.querySelectorAll(".section-nav a"));
+      const sections = navLinks
+        .map((link) => document.querySelector(link.getAttribute("href")))
+        .filter(Boolean);
+      const revealItems = Array.from(document.querySelectorAll(".reveal"));
+      const tabs = Array.from(document.querySelectorAll(".segment-tab"));
+
+      const segmentData = {
+        family: {
+          kicker: "Family offices",
+          title: "Private conviction before formal process.",
+          copy:
+            "Family offices often respond to discreet, high-conviction conversations where the manager can frame the category without overselling it. Prioritize principals, CIOs, investment directors, and trusted advisors.",
+          angles: [
+            "Lead with why quantum is becoming institutionally legible now.",
+            "Use Kris for conviction and Zeynep for warm bridges through events or shared networks.",
+            "Offer a short non-confidential investor note before asking for a meeting.",
+          ],
+          touch: "Warm comment, then connection",
+          proof: "Specialist thesis and access",
+          conversion: "Private conversation",
+        },
+        fof: {
+          kicker: "Funds of funds",
+          title: "Manager-selection logic comes first.",
+          copy:
+            "Funds of funds need to understand why a specialist quantum manager deserves a place in a venture allocation. The content should help them diligence category focus, sourcing edge, and portfolio construction.",
+          angles: [
+            "Lead with manager-selection questions rather than category excitement.",
+            "Have Kris publish diligence frameworks and Zeynep engage around shared portfolio or ecosystem relationships.",
+            "Invite a comparison of how FoFs evaluate emerging specialist managers.",
+          ],
+          touch: "Diligence comment",
+          proof: "Repeatable manager edge",
+          conversion: "Allocation-fit discussion",
+        },
+        endowment: {
+          kicker: "University endowments",
+          title: "Academic adjacency makes the bridge credible.",
+          copy:
+            "Endowments can care about long-horizon venture exposure, research ecosystems, and mission-adjacent innovation. The LinkedIn motion should be thoughtful, patient, and especially careful about governance language.",
+          angles: [
+            "Reference research-to-company formation without implying guaranteed outcomes.",
+            "Use Zeynep for university and ecosystem context; use Kris for portfolio role and risk framing.",
+            "Connect around a university innovation event, faculty network, or private markets viewpoint.",
+          ],
+          touch: "Research or event context",
+          proof: "Long-horizon category fit",
+          conversion: "Introductory allocator exchange",
+        },
+        pension: {
+          kicker: "Pension funds",
+          title: "Governance and risk language earns attention.",
+          copy:
+            "Pension funds require a more institutional tone: risk, process, role in portfolio construction, manager oversight, and reporting. Keep outreach especially restrained and avoid novelty-led hooks.",
+          angles: [
+            "Lead with where specialist venture exposure can fit, and where it should not.",
+            "Kris should own governance and allocation fit. Zeynep should engage only where there is a warm path or event reason.",
+            "Use public content to show discipline before asking for a direct exchange.",
+          ],
+          touch: "Governance-led comment",
+          proof: "Process and reporting discipline",
+          conversion: "Careful qualification call",
+        },
+      };
+
+      const updateSegment = (key) => {
+        const data = segmentData[key];
+        if (!data) return;
+        document.getElementById("segment-kicker").textContent = data.kicker;
+        document.getElementById("segment-title").textContent = data.title;
+        document.getElementById("segment-copy").textContent = data.copy;
+        document.getElementById("segment-touch").textContent = data.touch;
+        document.getElementById("segment-proof").textContent = data.proof;
+        document.getElementById("segment-conversion").textContent = data.conversion;
+        document.getElementById("segment-angles").innerHTML = data.angles
+          .map((angle) => `<li>${angle}</li>`)
+          .join("");
+      };
+
+      tabs.forEach((tab) => {
+        tab.addEventListener("click", () => {
+          tabs.forEach((item) => item.classList.remove("is-active"));
+          tab.classList.add("is-active");
+          updateSegment(tab.dataset.segment);
+        });
+      });
+
+      const revealObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("is-visible");
+              revealObserver.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.12 }
+      );
+
+      revealItems.forEach((item) => {
+        if (!item.classList.contains("is-visible")) revealObserver.observe(item);
+      });
+
+      const sectionObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (!entry.isIntersecting) return;
+            navLinks.forEach((link) => {
+              link.classList.toggle("is-active", link.getAttribute("href") === `#${entry.target.id}`);
+            });
+          });
+        },
+        { rootMargin: "-20% 0px -64% 0px", threshold: 0.05 }
+      );
+
+      sections.forEach((section) => sectionObserver.observe(section));
+
+      const updateProgress = () => {
+        const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+        const progress = maxScroll > 0 ? Math.min(window.scrollY / maxScroll, 1) : 0;
+        progressBar.style.width = `${(progress * 100).toFixed(2)}%`;
+      };
+
+      updateProgress();
+      window.addEventListener("scroll", updateProgress, { passive: true });
+      window.addEventListener("resize", updateProgress);
+    </script>
+  </body>
+</html>

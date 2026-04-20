@@ -6,13 +6,14 @@ This repo contains a GitHub Pages-ready static HTML version of the Firgun paid m
 
 - `index.html` is the public entrypoint for GitHub Pages.
 - `deep-research-report-firgun.html` is a named copy of the same long-form page.
-- `html_build/build-firgun-html.js` rebuilds the page from `deep-research-report.md`.
+- `linkedin-strategy.html` is the proactive LinkedIn strategy page for Kris Naudts and Zeynep Korüturk.
+- `html_build/build-firgun-html.js` rebuilds the current LP-first page from `deep-research-report2.md` by default.
 
 ## Rebuild locally
 
 ```bash
-/usr/local/bin/node html_build/build-firgun-html.js deep-research-report.md index.html
-/usr/local/bin/node html_build/build-firgun-html.js deep-research-report.md deep-research-report-firgun.html
+/usr/local/bin/node html_build/build-firgun-html.js deep-research-report2.md index.html
+/usr/local/bin/node html_build/build-firgun-html.js deep-research-report2.md deep-research-report-firgun.html
 ```
 
 ## Publish on GitHub Pages
